@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilhas | SOMA+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="trilhas.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      <span class="logo-text">SOMA<span class="plus">+</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-mobile" id="menu">
+      <ul>
+        <li><a href="trilhas.html">Trilhas</a></li>
+        <li><a href="index.html#comunidade">Comunidade</a></li>
+        <li><a href="index.html#depoimentos">Histórias</a></li>
+        <li><a href="#" class="nav-entrar">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="breadcrumb"><a href="index.html">início</a> / trilhas</span>
+      <h1>Escolha sua trilha</h1>
+      <p class="lead">Conteúdo gratuito, em português, do primeiro "Olá, mundo!" ao seu primeiro projeto no portfólio. Filtre por tecnologia ou nível para achar o ponto certo de partida.</p>
+    </div>
+  </section>
+
+  <!-- ============ FILTROS ============ -->
+  <div class="filtros">
+    <div>
+      <span class="filtro-label">tecnologia</span>
+      <div class="filtro-row" id="filtroTech">
+        <button class="filtro-chip active" data-tech="todas">Todas</button>
+        <button class="filtro-chip" data-tech="python">Python</button>
+        <button class="filtro-chip" data-tech="javascript">JavaScript</button>
+        <button class="filtro-chip" data-tech="html-css">HTML/CSS</button>
+        <button class="filtro-chip" data-tech="sql">SQL</button>
+        <button class="filtro-chip" data-tech="git">Git</button>
+        <button class="filtro-chip" data-tech="carreira">Carreira</button>
+      </div>
+    </div>
+    <div>
+      <span class="filtro-label">nível</span>
+      <div class="filtro-row" id="filtroNivel">
+        <button class="filtro-chip active" data-nivel="todos">Todos</button>
+        <button class="filtro-chip" data-nivel="iniciante">Iniciante</button>
+        <button class="filtro-chip" data-nivel="intermediario">Intermediário</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="resultado-count" id="resultadoCount">8 trilhas disponíveis</p>
+
+  <!-- ============ GRID DE TRILHAS ============ -->
+  <div class="trilhas-full-grid" id="trilhasGrid">
+
+    <article class="trilha-card-full" data-tech="logica" data-nivel="iniciante">
+      <div class="trilha-top">
+        <span class="lang-icon" style="background:#8E8FFA;">LOG</span>
+        <span class="trilha-nivel">Iniciante</span>
+      </div>
+      <h3>Lógica de Programação</h3>
+      <p>O ponto de partida antes de qualquer linguagem: variáveis, condicionais e repetição.</p>
+      <div class="meta-row"><span>7 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="python" data-nivel="iniciante">
+      <div class="trilha-top">
+        <span class="lang-icon py">PY</span>
+        <span class="trilha-nivel">Iniciante</span>
+      </div>
+      <h3>Python para Começar</h3>
+      <p>Lógica de programação, variáveis e seus primeiros scripts — sem pré-requisitos.</p>
+      <div class="meta-row"><span>9 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="html-css" data-nivel="iniciante">
+      <div class="trilha-top">
+        <span class="lang-icon" style="background:#FF8A5C;">CSS</span>
+        <span class="trilha-nivel">Iniciante</span>
+      </div>
+      <h3>HTML e CSS na Prática</h3>
+      <p>Construa sua primeira página do zero e entenda como tudo na web é organizado.</p>
+      <div class="meta-row"><span>6 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="javascript" data-nivel="iniciante">
+      <div class="trilha-top">
+        <span class="lang-icon js">JS</span>
+        <span class="trilha-nivel">Iniciante</span>
+      </div>
+      <h3>JavaScript na Prática</h3>
+      <p>Construa páginas interativas e entenda como a web funciona por trás dos cliques.</p>
+      <div class="meta-row"><span>8 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="sql" data-nivel="intermediario">
+      <div class="trilha-top">
+        <span class="lang-icon sql">SQL</span>
+        <span class="trilha-nivel">Intermediário</span>
+      </div>
+      <h3>Dados do Zero ao Insight</h3>
+      <p>Consultas, planilhas e os primeiros passos para trabalhar com análise de dados.</p>
+      <div class="meta-row"><span>7 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="git" data-nivel="iniciante">
+      <div class="trilha-top">
+        <span class="lang-icon git">GIT</span>
+        <span class="trilha-nivel">Iniciante</span>
+      </div>
+      <h3>Git e Controle de Versão</h3>
+      <p>Aprenda a versionar seu código e colaborar em projetos como faz qualquer time de dev.</p>
+      <div class="meta-row"><span>5 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="python" data-nivel="intermediario">
+      <div class="trilha-top">
+        <span class="lang-icon py">PY</span>
+        <span class="trilha-nivel">Intermediário</span>
+      </div>
+      <h3>Python para Automação</h3>
+      <p>Use Python para automatizar tarefas repetitivas do dia a dia, do Excel a arquivos.</p>
+      <div class="meta-row"><span>6 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="carreira" data-nivel="intermediario">
+      <div class="trilha-top">
+        <span class="lang-icon" style="background:#5CE0A0;">CAR</span>
+        <span class="trilha-nivel">Intermediário</span>
+      </div>
+      <h3>Carreira em Tech</h3>
+      <p>Portfólio, LinkedIn, currículo e como se preparar para a primeira entrevista.</p>
+      <div class="meta-row"><span>6 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+  </div>
+
+  <div class="empty-state" id="emptyState">
+    <span class="emoji">🔍</span>
+    <h3>Nenhuma trilha encontrada</h3>
+    <p>Tente outro filtro ou volte para "Todas" para ver o catálogo completo.</p>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div class="rodape-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span class="logo-text">SOMA<span class="plus">+</span></span>
+        </a>
+        <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
+      </div>
+
+      <nav class="rodape-col">
+        <h5>Plataforma</h5>
+        <a href="trilhas.html">Trilhas</a>
+        <a href="index.html#comunidade">Comunidade</a>
+        <a href="index.html#depoimentos">Histórias</a>
+        <a href="#">Entrar</a>
+      </nav>
+
+      <nav class="rodape-col">
+        <h5>Institucional</h5>
+        <a href="#">Sobre</a>
+        <a href="#">Parcerias</a>
+        <a href="#">Termos de uso</a>
+      </nav>
+
+      <div class="rodape-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:anaheloisa1809@gmail.com">anaheloisa1809@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="rodape-bottom">
+      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="trilhas.js"></script>
+</body>
+</html>

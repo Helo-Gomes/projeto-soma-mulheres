@@ -1,0 +1,176 @@
+/* ============================================
+   SOMA+ — Estilos das páginas de Trilhas
+   (listagem + página individual)
+   Depende dos tokens definidos em style.css
+============================================ */
+
+/* ============ PAGE HEADER (sub-hero simples) ============ */
+.page-hero{
+  padding:2.5rem 1.25rem 2rem;
+  border-bottom:1px solid var(--border);
+}
+.page-hero-inner{max-width:1140px;margin:0 auto;}
+.breadcrumb{
+  font-family:var(--font-mono);font-size:0.78rem;color:var(--text-dim);
+  display:flex;align-items:center;gap:8px;margin-bottom:18px;
+}
+.breadcrumb a{color:var(--text-dim);}
+.breadcrumb a:hover{color:var(--pink-soft);}
+.page-hero h1{font-size:clamp(1.8rem,5vw,2.6rem);margin-bottom:10px;}
+.page-hero .lead{font-size:1rem;max-width:560px;color:var(--text-muted);}
+
+/* ============ FILTROS (página de listagem) ============ */
+.filtros{
+  max-width:1140px;margin:0 auto;padding:1.75rem 1.25rem 0;
+  display:flex;flex-direction:column;gap:14px;
+}
+.filtro-row{display:flex;gap:8px;flex-wrap:wrap;}
+.filtro-chip{
+  font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);
+  background:var(--surface);border:1px solid var(--border);
+  padding:8px 16px;border-radius:30px;transition:all 0.2s ease;
+}
+.filtro-chip:hover{border-color:var(--purple-soft);color:var(--text);}
+.filtro-chip.active{
+  background:linear-gradient(90deg,var(--purple),var(--pink));
+  color:#fff;border-color:transparent;
+}
+.filtro-label{font-family:var(--font-mono);font-size:0.74rem;color:var(--text-dim);text-transform:lowercase;}
+
+.resultado-count{
+  max-width:1140px;margin:1.5rem auto 0;padding:0 1.25rem;
+  font-size:0.85rem;color:var(--text-dim);
+}
+
+/* ============ GRID DE TRILHAS (listagem completa) ============ */
+.trilhas-full-grid{
+  display:grid;gap:1.2rem;max-width:1140px;margin:1.5rem auto 0;padding:0 1.25rem 4rem;
+  grid-template-columns:1fr;
+}
+@media(min-width:680px){.trilhas-full-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1024px){.trilhas-full-grid{grid-template-columns:repeat(3,1fr);}}
+
+.trilha-card-full{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.5rem;display:flex;flex-direction:column;gap:12px;
+  transition:border-color 0.2s ease, transform 0.2s ease;
+}
+.trilha-card-full:hover{border-color:var(--purple-soft);transform:translateY(-3px);}
+.trilha-card-full .trilha-top{display:flex;align-items:center;justify-content:space-between;}
+.trilha-card-full h3{font-family:var(--font-display);font-size:1.12rem;}
+.trilha-card-full p{font-size:0.9rem;flex:1;}
+.trilha-card-full .meta-row{
+  display:flex;gap:14px;font-family:var(--font-mono);font-size:0.74rem;color:var(--text-dim);
+}
+
+.empty-state{
+  max-width:480px;margin:3rem auto;text-align:center;padding:0 1.25rem;
+  display:none;
+}
+.empty-state.visible{display:block;}
+.empty-state .emoji{font-size:2rem;display:block;margin-bottom:12px;}
+.empty-state h3{font-family:var(--font-display);font-size:1.1rem;margin-bottom:8px;}
+.empty-state p{font-size:0.9rem;}
+
+/* ============ PÁGINA DE TRILHA INDIVIDUAL ============ */
+.trilha-detail-hero{
+  padding:2.5rem 1.25rem;border-bottom:1px solid var(--border);
+}
+.trilha-detail-inner{
+  max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:24px;
+}
+@media(min-width:880px){
+  .trilha-detail-inner{flex-direction:row;justify-content:space-between;align-items:flex-end;}
+}
+
+.trilha-detail-meta{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.trilha-detail-info h1{font-size:clamp(1.8rem,5vw,2.5rem);margin-bottom:12px;}
+.trilha-detail-info .lead{font-size:1rem;max-width:520px;color:var(--text-muted);margin-bottom:18px;}
+
+.trilha-stats{display:flex;gap:24px;flex-wrap:wrap;}
+.trilha-stat{display:flex;flex-direction:column;}
+.trilha-stat .num{font-family:var(--font-display);font-size:1.4rem;color:var(--text);}
+.trilha-stat .label{font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim);}
+
+.trilha-progress-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.5rem;min-width:240px;flex-shrink:0;
+}
+.trilha-progress-card h4{font-family:var(--font-display);font-size:1rem;margin-bottom:6px;}
+.trilha-progress-card .progress-caption{font-size:0.85rem;color:var(--text-dim);margin-bottom:18px;}
+.trilha-progress-card .btn{width:100%;}
+
+/* ============ AVISO DE CURADORIA ============ */
+.curadoria-aviso{
+  max-width:1140px;margin:0 auto;padding:1.75rem 1.25rem 0;
+}
+.aviso-card{
+  display:flex;gap:14px;align-items:flex-start;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.1rem 1.3rem;
+}
+.aviso-card .ic{font-size:1.2rem;flex-shrink:0;line-height:1.4;}
+.aviso-card p{font-size:0.88rem;color:var(--text-muted);}
+.aviso-card strong{color:var(--text);}
+
+/* ============ LISTA DE RECURSOS CURADOS ============ */
+.recursos-section{max-width:1140px;margin:0 auto;padding:2.5rem 1.25rem 4rem;}
+.recursos-list{display:flex;flex-direction:column;gap:14px;}
+
+.recurso-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.3rem;display:flex;gap:16px;align-items:flex-start;
+  transition:border-color 0.2s ease;
+}
+.recurso-card:hover{border-color:var(--purple-soft);}
+
+.recurso-tipo{
+  width:42px;height:42px;border-radius:12px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;
+}
+.recurso-tipo.video{background:rgba(255,79,163,0.15);}
+.recurso-tipo.ebook{background:rgba(232,197,71,0.15);}
+.recurso-tipo.plataforma{background:rgba(92,224,160,0.15);}
+
+.recurso-info{flex:1;min-width:0;}
+.recurso-top-row{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px;
+}
+.recurso-tag{
+  font-family:var(--font-mono);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.04em;
+  color:var(--text-dim);
+}
+.recurso-info h3{font-family:var(--font-display);font-size:1.02rem;margin-bottom:6px;}
+.recurso-info .fonte{
+  font-family:var(--font-mono);font-size:0.78rem;color:var(--pink-soft);margin-bottom:8px;display:block;
+}
+.recurso-info p{font-size:0.88rem;}
+
+.recurso-action{flex-shrink:0;align-self:center;}
+.recurso-link{
+  font-family:var(--font-body);font-weight:700;font-size:0.85rem;color:var(--text);
+  background:var(--surface-2);border:1px solid var(--border);
+  padding:9px 16px;border-radius:30px;white-space:nowrap;
+  display:inline-flex;align-items:center;gap:6px;
+  transition:all 0.2s ease;
+}
+.recurso-link:hover{border-color:var(--purple-soft);background:var(--surface);}
+
+@media (max-width:560px){
+  .recurso-card{flex-wrap:wrap;}
+  .recurso-action{width:100%;margin-top:8px;}
+  .recurso-link{width:100%;justify-content:center;}
+}
+
+/* ============ CTA FINAL DA TRILHA ============ */
+.trilha-cta-final{
+  max-width:1140px;margin:0 auto 4rem;padding:0 1.25rem;
+}
+.cta-card{
+  background:linear-gradient(135deg, var(--surface), var(--surface-2));
+  border:1px solid var(--border);border-radius:var(--radius);
+  padding:2rem;text-align:center;
+}
+.cta-card h3{font-family:var(--font-display);font-size:1.3rem;margin-bottom:10px;}
+.cta-card p{margin-bottom:20px;max-width:440px;margin-left:auto;margin-right:auto;}
