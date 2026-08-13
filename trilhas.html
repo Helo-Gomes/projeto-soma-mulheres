@@ -27,8 +27,7 @@
       <ul>
         <li><a href="trilhas.html">Trilhas</a></li>
         <li><a href="index.html#comunidade">Comunidade</a></li>
-        <li><a href="index.html#depoimentos">Histórias</a></li>
-        <li><a href="#" class="nav-entrar">Entrar</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -53,6 +52,9 @@
         <button class="filtro-chip" data-tech="html-css">HTML/CSS</button>
         <button class="filtro-chip" data-tech="sql">SQL</button>
         <button class="filtro-chip" data-tech="git">Git</button>
+        <button class="filtro-chip" data-tech="java">Java</button>
+        <button class="filtro-chip" data-tech="spring">Spring Boot</button>
+        <button class="filtro-chip" data-tech="figma">Figma</button>
         <button class="filtro-chip" data-tech="carreira">Carreira</button>
       </div>
     </div>
@@ -66,7 +68,7 @@
     </div>
   </div>
 
-  <p class="resultado-count" id="resultadoCount">8 trilhas disponíveis</p>
+  <p class="resultado-count" id="resultadoCount">11 trilhas disponíveis</p>
 
   <!-- ============ GRID DE TRILHAS ============ -->
   <div class="trilhas-full-grid" id="trilhasGrid">
@@ -79,7 +81,7 @@
       <h3>Lógica de Programação</h3>
       <p>O ponto de partida antes de qualquer linguagem: variáveis, condicionais e repetição.</p>
       <div class="meta-row"><span>7 recursos</span><span>gratuitos</span></div>
-      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+      <a href="trilha-logica.html" class="trilha-link">Ver trilha →</a>
     </article>
 
     <article class="trilha-card-full" data-tech="python" data-nivel="iniciante">
@@ -100,8 +102,8 @@
       </div>
       <h3>HTML e CSS na Prática</h3>
       <p>Construa sua primeira página do zero e entenda como tudo na web é organizado.</p>
-      <div class="meta-row"><span>6 recursos</span><span>gratuitos</span></div>
-      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+      <div class="meta-row"><span>8 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-html-css.html" class="trilha-link">Ver trilha →</a>
     </article>
 
     <article class="trilha-card-full" data-tech="javascript" data-nivel="iniciante">
@@ -112,7 +114,7 @@
       <h3>JavaScript na Prática</h3>
       <p>Construa páginas interativas e entenda como a web funciona por trás dos cliques.</p>
       <div class="meta-row"><span>8 recursos</span><span>gratuitos</span></div>
-      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+      <a href="trilha-javascript.html" class="trilha-link">Ver trilha →</a>
     </article>
 
     <article class="trilha-card-full" data-tech="sql" data-nivel="intermediario">
@@ -123,7 +125,7 @@
       <h3>Dados do Zero ao Insight</h3>
       <p>Consultas, planilhas e os primeiros passos para trabalhar com análise de dados.</p>
       <div class="meta-row"><span>7 recursos</span><span>gratuitos</span></div>
-      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+      <a href="trilha-sql.html" class="trilha-link">Ver trilha →</a>
     </article>
 
     <article class="trilha-card-full" data-tech="git" data-nivel="iniciante">
@@ -134,7 +136,7 @@
       <h3>Git e Controle de Versão</h3>
       <p>Aprenda a versionar seu código e colaborar em projetos como faz qualquer time de dev.</p>
       <div class="meta-row"><span>5 recursos</span><span>gratuitos</span></div>
-      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+      <a href="trilha-git.html" class="trilha-link">Ver trilha →</a>
     </article>
 
     <article class="trilha-card-full" data-tech="python" data-nivel="intermediario">
@@ -145,7 +147,40 @@
       <h3>Python para Automação</h3>
       <p>Use Python para automatizar tarefas repetitivas do dia a dia, do Excel a arquivos.</p>
       <div class="meta-row"><span>6 recursos</span><span>gratuitos</span></div>
-      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+      <a href="trilha-python-automacao.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="java" data-nivel="intermediario">
+      <div class="trilha-top">
+        <span class="lang-icon java">JAVA</span>
+        <span class="trilha-nivel">Intermediário</span>
+      </div>
+      <h3>Java para Backend</h3>
+      <p>Orientação a objetos, tipagem forte e a base usada em sistemas corporativos do mundo real.</p>
+      <div class="meta-row"><span>6 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-java.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="spring" data-nivel="intermediario">
+      <div class="trilha-top">
+        <span class="lang-icon spring">SPB</span>
+        <span class="trilha-nivel">Intermediário</span>
+      </div>
+      <h3>Spring Boot na Prática</h3>
+      <p>Construa APIs Java de verdade e entenda como o backend das grandes empresas é feito.</p>
+      <div class="meta-row"><span>6 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-spring.html" class="trilha-link">Ver trilha →</a>
+    </article>
+
+    <article class="trilha-card-full" data-tech="figma" data-nivel="iniciante">
+      <div class="trilha-top">
+        <span class="lang-icon figma">FIG</span>
+        <span class="trilha-nivel">Iniciante</span>
+      </div>
+      <h3>Design de Interfaces com Figma</h3>
+      <p>Aprenda a prototipar telas e entender o olhar de quem desenha a experiência do produto.</p>
+      <div class="meta-row"><span>5 recursos</span><span>gratuitos</span></div>
+      <a href="trilha-figma.html" class="trilha-link">Ver trilha →</a>
     </article>
 
     <article class="trilha-card-full" data-tech="carreira" data-nivel="intermediario">
@@ -156,7 +191,7 @@
       <h3>Carreira em Tech</h3>
       <p>Portfólio, LinkedIn, currículo e como se preparar para a primeira entrevista.</p>
       <div class="meta-row"><span>6 recursos</span><span>gratuitos</span></div>
-      <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+      <a href="trilha-carreira.html" class="trilha-link">Ver trilha →</a>
     </article>
 
   </div>
@@ -182,7 +217,7 @@
         <h5>Plataforma</h5>
         <a href="trilhas.html">Trilhas</a>
         <a href="index.html#comunidade">Comunidade</a>
-        <a href="index.html#depoimentos">Histórias</a>
+        <a href="blog.html">Blog</a>
         <a href="#">Entrar</a>
       </nav>
 

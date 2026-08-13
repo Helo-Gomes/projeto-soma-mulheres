@@ -47,6 +47,8 @@ if (grid) {
       applyFilters();
     });
   });
+
+  applyFilters();
 }
 
 // (a lógica de accordion de módulos foi removida — a página de trilha agora

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python para Automação | SOMA+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="trilhas.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      <span class="logo-text">SOMA<span class="plus">+</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-mobile" id="menu">
+      <ul>
+        <li><a href="trilhas.html">Trilhas</a></li>
+        <li><a href="index.html#comunidade">Comunidade</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ TRILHA HERO ============ -->
+  <section class="trilha-detail-hero">
+    <div class="trilha-detail-inner">
+      <div class="trilha-detail-info">
+        <span class="breadcrumb"><a href="index.html">início</a> / <a href="trilhas.html">trilhas</a> / Python para Automação</span>
+
+        <div class="trilha-detail-meta">
+          <span class="lang-icon" style="background:#E8C547;color:#0E0B16;">PY</span>
+          <span class="trilha-nivel">Intermediário · recomendado após Python para Começar</span>
+        </div>
+
+        <h1>Python para Automação</h1>
+        <p class="lead">Curadoria para usar Python e automatizar tarefas repetitivas do dia a dia, de planilhas a arquivos e pastas.</p>
+
+        <div class="trilha-stats">
+          <div class="trilha-stat">
+            <span class="num">5</span>
+            <span class="label">recursos curados</span>
+          </div>
+          <div class="trilha-stat">
+            <span class="num">100%</span>
+            <span class="label">gratuitos</span>
+          </div>
+          <div class="trilha-stat">
+            <span class="num">15</span>
+            <span class="label">alunas nesta trilha</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trilha-progress-card">
+        <h4>Como funciona</h4>
+        <p class="progress-caption">Cada recurso abaixo é de outro criador ou plataforma. O SOMA+ organiza a ordem; o conteúdo é mantido por quem o produziu.</p>
+        <a href="#recursos" class="btn btn-primary">Ver recursos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVISO DE CURADORIA ============ -->
+  <div class="curadoria-aviso">
+    <div class="aviso-card">
+      <span class="ic">🧭</span>
+      <p><strong>Isso é uma curadoria, não um curso próprio.</strong> Selecionamos o que há de melhor e gratuito sobre automação com Python, organizado numa ordem que faz sentido depois da trilha de Python para Começar. Os links abrem direto no canal, site ou material do criador original.</p>
+    </div>
+  </div>
+
+  <!-- ============ RECURSOS CURADOS ============ -->
+  <section class="recursos-section" id="recursos">
+    <div class="section-head" style="margin-bottom:24px;padding:0;">
+      <span class="eyebrow">recursos, na ordem recomendada</span>
+      <h2>O que estudar, e em que ordem</h2>
+    </div>
+
+    <div class="recursos-list">
+      <article class="recurso-card">
+        <span class="recurso-tipo ebook">📘</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Livro · Gratuito, online</span>
+          </div>
+          <h3>Automate the Boring Stuff with Python</h3>
+          <span class="fonte">Al Sweigart</span>
+          <p>Um clássico gratuito e disponível online inteiro, focado em automatizar tarefas do dia a dia com Python.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://automatetheboringstuff.com/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo video">🎬</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Vídeo · Playlist</span>
+          </div>
+          <h3>Curso de Python — Mundo 3</h3>
+          <span class="fonte">Gustavo Guanabara · Curso em Vídeo</span>
+          <p>Continuação da trilha principal de Python, com módulos, arquivos e conceitos usados em automações.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.cursoemvideo.com/curso/python-3-mundo-3/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Documentação oficial</span>
+          </div>
+          <h3>Biblioteca openpyxl</h3>
+          <span class="fonte">openpyxl.readthedocs.io</span>
+          <p>Documentação da biblioteca mais usada para automatizar planilhas do Excel com Python.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://openpyxl.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Documentação oficial</span>
+          </div>
+          <h3>Biblioteca pandas</h3>
+          <span class="fonte">pandas.pydata.org</span>
+          <p>Referência para manipular tabelas e dados de forma automatizada, uma das bibliotecas mais usadas do mercado.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://pandas.pydata.org/docs/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo video">🎬</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Vídeo · Canal</span>
+          </div>
+          <h3>Hashtag Programação</h3>
+          <span class="fonte">YouTube</span>
+          <p>Canal com diversas aulas práticas de automação de processos e planilhas usando Python.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.youtube.com/c/HashtagPrograma%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <div class="trilha-cta-final">
+    <div class="cta-card">
+      <h3>Travou em algum conteúdo?</h3>
+      <p>O fórum da comunidade está cheio de alunas que já passaram pelos mesmos vídeos e exercícios — pergunte sem vergonha.</p>
+      <a href="index.html#comunidade" class="btn btn-primary">Ir para a comunidade</a>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div class="rodape-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span class="logo-text">SOMA<span class="plus">+</span></span>
+        </a>
+        <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
+      </div>
+
+      <nav class="rodape-col">
+        <h5>Plataforma</h5>
+        <a href="trilhas.html">Trilhas</a>
+        <a href="index.html#comunidade">Comunidade</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <nav class="rodape-col">
+        <h5>Institucional</h5>
+        <a href="#">Sobre</a>
+        <a href="#">Parcerias</a>
+        <a href="#">Termos de uso</a>
+      </nav>
+
+      <div class="rodape-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:anaheloisa1809@gmail.com">anaheloisa1809@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="rodape-bottom">
+      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="trilhas.js"></script>
+</body>
+</html>

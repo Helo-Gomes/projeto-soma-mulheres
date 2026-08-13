@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design de Interfaces com Figma | SOMA+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="trilhas.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      <span class="logo-text">SOMA<span class="plus">+</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-mobile" id="menu">
+      <ul>
+        <li><a href="trilhas.html">Trilhas</a></li>
+        <li><a href="index.html#comunidade">Comunidade</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ TRILHA HERO ============ -->
+  <section class="trilha-detail-hero">
+    <div class="trilha-detail-inner">
+      <div class="trilha-detail-info">
+        <span class="breadcrumb"><a href="index.html">início</a> / <a href="trilhas.html">trilhas</a> / Design de Interfaces com Figma</span>
+
+        <div class="trilha-detail-meta">
+          <span class="lang-icon" style="background:#A259FF;color:#fff;">FIG</span>
+          <span class="trilha-nivel">Iniciante · sem pré-requisitos</span>
+        </div>
+
+        <h1>Design de Interfaces com Figma</h1>
+        <p class="lead">Curadoria para aprender a prototipar telas e entender o olhar de quem desenha a experiência do produto antes de virar código.</p>
+
+        <div class="trilha-stats">
+          <div class="trilha-stat">
+            <span class="num">4</span>
+            <span class="label">recursos curados</span>
+          </div>
+          <div class="trilha-stat">
+            <span class="num">100%</span>
+            <span class="label">gratuitos</span>
+          </div>
+          <div class="trilha-stat">
+            <span class="num">05</span>
+            <span class="label">alunas nesta trilha</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trilha-progress-card">
+        <h4>Como funciona</h4>
+        <p class="progress-caption">Cada recurso abaixo é de outro criador ou plataforma. O SOMA+ organiza a ordem; o conteúdo é mantido por quem o produziu.</p>
+        <a href="#recursos" class="btn btn-primary">Ver recursos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVISO DE CURADORIA ============ -->
+  <div class="curadoria-aviso">
+    <div class="aviso-card">
+      <span class="ic">🧭</span>
+      <p><strong>Isso é uma curadoria, não um curso próprio.</strong> Selecionamos o que há de melhor e gratuito sobre Figma e design de interfaces, organizado numa ordem que faz sentido para quem está começando. Os links abrem direto no canal, site ou material do criador original.</p>
+    </div>
+  </div>
+
+  <!-- ============ RECURSOS CURADOS ============ -->
+  <section class="recursos-section" id="recursos">
+    <div class="section-head" style="margin-bottom:24px;padding:0;">
+      <span class="eyebrow">recursos, na ordem recomendada</span>
+      <h2>O que estudar, e em que ordem</h2>
+    </div>
+
+    <div class="recursos-list">
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🎨</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Curso completo · Gratuito, com certificado</span>
+          </div>
+          <h3>Curso de Figma</h3>
+          <span class="fonte">She Is A Creative</span>
+          <p>Para entender como o design de uma tela é pensado antes de transformá-la em código.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://sheisacreative.com.br/curso/curso-de-figma" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo video">🎬</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Vídeo · Canal oficial</span>
+          </div>
+          <h3>Canal oficial do Figma</h3>
+          <span class="fonte">YouTube</span>
+          <p>Tutoriais direto de quem faz a ferramenta, cobrindo desde o básico até recursos avançados.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.youtube.com/@Figma" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Documentação oficial</span>
+          </div>
+          <h3>Central de Ajuda do Figma</h3>
+          <span class="fonte">help.figma.com</span>
+          <p>A referência oficial para consultar sempre que tiver dúvida sobre uma ferramenta específica.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://help.figma.com/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">✨</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Plataforma · Inspiração visual</span>
+          </div>
+          <h3>Dribbble</h3>
+          <span class="fonte">dribbble.com</span>
+          <p>Inspiração visual para layouts e telas de outros designers ao redor do mundo.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <div class="trilha-cta-final">
+    <div class="cta-card">
+      <h3>Travou em algum conteúdo?</h3>
+      <p>O fórum da comunidade está cheio de alunas que já passaram pelos mesmos vídeos e exercícios — pergunte sem vergonha.</p>
+      <a href="index.html#comunidade" class="btn btn-primary">Ir para a comunidade</a>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div class="rodape-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span class="logo-text">SOMA<span class="plus">+</span></span>
+        </a>
+        <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
+      </div>
+
+      <nav class="rodape-col">
+        <h5>Plataforma</h5>
+        <a href="trilhas.html">Trilhas</a>
+        <a href="index.html#comunidade">Comunidade</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <nav class="rodape-col">
+        <h5>Institucional</h5>
+        <a href="#">Sobre</a>
+        <a href="#">Parcerias</a>
+        <a href="#">Termos de uso</a>
+      </nav>
+
+      <div class="rodape-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:anaheloisa1809@gmail.com">anaheloisa1809@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="rodape-bottom">
+      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="trilhas.js"></script>
+</body>
+</html>

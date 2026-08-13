@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML e CSS na Prática | SOMA+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="trilhas.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      <span class="logo-text">SOMA<span class="plus">+</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-mobile" id="menu">
+      <ul>
+        <li><a href="trilhas.html">Trilhas</a></li>
+        <li><a href="index.html#comunidade">Comunidade</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ TRILHA HERO ============ -->
+  <section class="trilha-detail-hero">
+    <div class="trilha-detail-inner">
+      <div class="trilha-detail-info">
+        <span class="breadcrumb"><a href="index.html">início</a> / <a href="trilhas.html">trilhas</a> / HTML e CSS na Prática</span>
+
+        <div class="trilha-detail-meta">
+          <span class="lang-icon" style="background:#FF8A5C;">CSS</span>
+          <span class="trilha-nivel">Iniciante · sem pré-requisitos</span>
+        </div>
+
+        <h1>HTML e CSS na Prática</h1>
+        <p class="lead">Curadoria própria dos melhores conteúdos gratuitos (e alguns pagos com muito material grátis) para aprender a construir e estilizar páginas web do zero — vídeos, cursos em texto, documentação e ferramentas de design.</p>
+
+        <div class="trilha-stats">
+          <div class="trilha-stat">
+            <span class="num">8</span>
+            <span class="label">recursos curados</span>
+          </div>
+          <div class="trilha-stat">
+            <span class="num">quase tudo</span>
+            <span class="label">gratuito</span>
+          </div>
+          <div class="trilha-stat">
+            <span class="num">10</span>
+            <span class="label">alunas nesta trilha</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trilha-progress-card">
+        <h4>Como funciona</h4>
+        <p class="progress-caption">Cada recurso abaixo é de outro criador ou plataforma. O SOMA+ organiza a ordem; o conteúdo é mantido por quem o produziu.</p>
+        <a href="#recursos" class="btn btn-primary">Ver recursos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVISO DE CURADORIA ============ -->
+  <div class="curadoria-aviso">
+    <div class="aviso-card">
+      <span class="ic">🧭</span>
+      <p><strong>Isso é uma curadoria, não um curso próprio.</strong> Selecionamos o que há de melhor sobre HTML e CSS na internet e organizamos numa ordem que faz sentido para quem está começando. A maior parte é 100% gratuita; a Codecademy é uma plataforma paga, mas com bastante conteúdo liberado sem custo. Os links abrem direto no canal, site ou material do criador original.</p>
+    </div>
+  </div>
+
+  <!-- ============ RECURSOS CURADOS ============ -->
+  <section class="recursos-section" id="recursos">
+    <div class="section-head" style="margin-bottom:24px;padding:0;">
+      <span class="eyebrow">recursos, na ordem recomendada</span>
+      <h2>O que estudar, e em que ordem</h2>
+    </div>
+
+    <div class="recursos-list">
+
+      <article class="recurso-card">
+        <span class="recurso-tipo video">🎬</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Vídeo · Playlist completa</span>
+          </div>
+          <h3>Curso em Vídeo de HTML5 e CSS3</h3>
+          <span class="fonte">Gustavo Guanabara · Curso em Vídeo</span>
+          <p>O ponto de partida clássico e mais indicado por aqui: bem linear, do absoluto zero, em português. Gratuito — só é pago se você quiser emitir certificado.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+      <article class="recurso-card">
+        <span class="recurso-tipo ebook">📘</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Curso em texto · Gratuito</span>
+          </div>
+          <h3>Curso Introdutório de HTML em Português</h3>
+          <span class="fonte">freeCodeCamp</span>
+          <p>Bom para acompanhar lendo no seu próprio ritmo, com explicações diretas e exemplos práticos.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.freecodecamp.org/portuguese/news/curso-introdutorio-de-html-em-portugues/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+      <article class="recurso-card">
+        <span class="recurso-tipo video">🎬</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Vídeo · Aula única</span>
+          </div>
+          <h3>Curso Rápido de CSS</h3>
+          <span class="fonte">Rafa</span>
+          <p>Uma passada rápida e direta pelos fundamentos de CSS, boa para fixar o que veio antes.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.youtube.com/watch?v=AB35iSr1YyA" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+      <article class="recurso-card">
+        <span class="recurso-tipo ebook">📘</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Curso em texto · Gratuito</span>
+          </div>
+          <h3>Learn CSS</h3>
+          <span class="fonte">web.dev</span>
+          <p>Guia estruturado e visual sobre CSS, direto do time do Google Chrome, com versão em português.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://web.dev/learn/css?hl=pt" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Documentação oficial</span>
+          </div>
+          <h3>HTML | MDN Web Docs</h3>
+          <span class="fonte">Mozilla · em português</span>
+          <p>A referência para consultar sempre que bater dúvida sobre uma tag ou atributo específico.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Documentação oficial</span>
+          </div>
+          <h3>CSS | MDN Web Docs</h3>
+          <span class="fonte">Mozilla · em português</span>
+          <p>O mesmo princípio da documentação de HTML, mas para propriedades, seletores e valores de CSS.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Plataforma · Tutoriais rápidos</span>
+          </div>
+          <h3>Tutoriais de HTML e CSS</h3>
+          <span class="fonte">W3Schools</span>
+          <p>Bom para consultas rápidas e exemplos práticos que você pode testar direto na página, chãozinho de todo iniciante.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.w3schools.com/htmlcss/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Plataforma · Em inglês, paga (com muito conteúdo grátis)</span>
+          </div>
+          <h3>Codecademy</h3>
+          <span class="fonte">Codecademy</span>
+          <p>Prática interativa direto no navegador. É uma plataforma paga, mas boa parte do material está disponível gratuitamente.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ DESIGN DE TELAS ============ -->
+  <section class="recursos-section subsecao" style="padding-top:0;">
+    <div class="section-head" style="margin-bottom:24px;padding:0;">
+      <span class="eyebrow">um passo além</span>
+      <h2>Design de telas</h2>
+    </div>
+
+    <div class="recursos-list">
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🎨</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Curso completo · Gratuito, com certificado</span>
+          </div>
+          <h3>Curso de Figma</h3>
+          <span class="fonte">She Is A Creative</span>
+          <p>Para entender como o design de uma tela é pensado antes de transformá-la em código.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://sheisacreative.com.br/curso/curso-de-figma" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ MATERIAL COMPLEMENTAR ============ -->
+  <section class="recursos-section subsecao" style="padding-top:0;">
+    <div class="section-head" style="margin-bottom:24px;padding:0;">
+      <span class="eyebrow">ferramentas do dia a dia</span>
+      <h2>Material complementar</h2>
+    </div>
+
+    <div class="ferramentas-grid">
+      <div class="ferramenta-card">
+        <span class="ferramenta-tipo">✨</span>
+        <div class="ferramenta-info">
+          <h4>Dribbble</h4>
+          <p>Inspiração visual para layouts e telas.</p>
+          <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">Acessar ↗</a>
+        </div>
+      </div>
+      <div class="ferramenta-card">
+        <span class="ferramenta-tipo">✨</span>
+        <div class="ferramenta-info">
+          <h4>Behance</h4>
+          <p>Portfólios e projetos de design completos.</p>
+          <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Acessar ↗</a>
+        </div>
+      </div>
+      <div class="ferramenta-card">
+        <span class="ferramenta-tipo">✨</span>
+        <div class="ferramenta-info">
+          <h4>CodePen</h4>
+          <p>Experimentos de HTML, CSS e JS para se inspirar e testar ideias.</p>
+          <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">Acessar ↗</a>
+        </div>
+      </div>
+      <div class="ferramenta-card">
+        <span class="ferramenta-tipo">🖼️</span>
+        <div class="ferramenta-info">
+          <h4>Unsplash</h4>
+          <p>Imagens livres de direitos autorais para seus projetos.</p>
+          <a href="https://unsplash.com/pt-br" target="_blank" rel="noopener noreferrer">Acessar ↗</a>
+        </div>
+      </div>
+      <div class="ferramenta-card">
+        <span class="ferramenta-tipo">🖼️</span>
+        <div class="ferramenta-info">
+          <h4>Pexels</h4>
+          <p>Outra ótima fonte de fotos e vídeos gratuitos.</p>
+          <a href="https://www.pexels.com/pt-br/" target="_blank" rel="noopener noreferrer">Acessar ↗</a>
+        </div>
+      </div>
+      <div class="ferramenta-card">
+        <span class="ferramenta-tipo">🔣</span>
+        <div class="ferramenta-info">
+          <h4>Icons8</h4>
+          <p>Ícones para usar nas suas interfaces.</p>
+          <a href="https://icons8.com.br/" target="_blank" rel="noopener noreferrer">Acessar ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <div class="trilha-cta-final">
+    <div class="cta-card">
+      <h3>Travou em algum conteúdo?</h3>
+      <p>O fórum da comunidade está cheio de alunas que já passaram pelos mesmos vídeos e exercícios — pergunte sem vergonha.</p>
+      <a href="index.html#comunidade" class="btn btn-primary">Ir para a comunidade</a>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div class="rodape-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span class="logo-text">SOMA<span class="plus">+</span></span>
+        </a>
+        <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
+      </div>
+
+      <nav class="rodape-col">
+        <h5>Plataforma</h5>
+        <a href="trilhas.html">Trilhas</a>
+        <a href="index.html#comunidade">Comunidade</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <nav class="rodape-col">
+        <h5>Institucional</h5>
+        <a href="#">Sobre</a>
+        <a href="#">Parcerias</a>
+        <a href="#">Termos de uso</a>
+      </nav>
+
+      <div class="rodape-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:anaheloisa1809@gmail.com">anaheloisa1809@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="rodape-bottom">
+      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="trilhas.js"></script>
+</body>
+</html>

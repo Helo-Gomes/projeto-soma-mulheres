@@ -72,6 +72,8 @@ p{font-size:1rem;color:var(--text-muted);}
 }
 .logo-text{color:var(--text);}
 .plus{color:var(--pink);}
+.logo-img{height:28px;width:auto;display:block;}
+.rodape-brand .logo-img{height:26px;}
 
 /* ============ HEADER / MENU ============ */
 .topo{
@@ -139,6 +141,50 @@ p{font-size:1rem;color:var(--text-muted);}
 
 @media (min-width:768px){
   .botoes{flex-direction:row;justify-content:flex-start;}
+}
+
+/* ============ HERO BANNER (topo de impacto) ============ */
+.hero-banner{
+  position:relative;
+  min-height:88vh;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+.hero-banner-media{
+  position:absolute;inset:0;z-index:0;
+}
+.hero-banner-media img{
+  width:100%;height:100%;object-fit:cover;object-position:center 30%;
+  filter:saturate(0.85);
+}
+.hero-banner-media::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg, rgba(14, 11, 22, 0.137) 0%, rgba(14, 11, 22, 0.158) 55%, var(--bg) 100%),
+    linear-gradient(90deg, rgba(14, 11, 22, 0.377) 0%, rgba(14, 11, 22, 0.151) 55%, rgba(14, 11, 22, 0.212) 100%);
+}
+.hero-banner-content{
+  position:relative;z-index:1;
+  max-width:640px;
+  margin:0 auto;
+  padding:6rem 1.25rem;
+  text-align:center;
+}
+.hero-banner-content h1{
+  font-size:clamp(2rem,6vw,3.4rem);
+  margin-bottom:18px;
+}
+.hero-banner-content p.lead{
+  font-size:1.08rem;
+  max-width:520px;
+  margin:0 auto 32px;
+}
+@media (min-width:768px){
+  .hero-banner-content{
+    text-align:left;margin:0;padding:0 4rem;max-width:640px;
+  }
+  .hero-banner-content p.lead{margin:0 0 32px;}
 }
 
 /* ============ HERO ============ */
@@ -223,6 +269,9 @@ section{padding:4rem 0;}
 .lang-icon.js{background:#F0DB4F;}
 .lang-icon.sql{background:#5CE0A0;}
 .lang-icon.git{background:#FF7AB8;}
+.lang-icon.java{background:#F89820;}
+.lang-icon.spring{background:#6DB33F;}
+.lang-icon.figma{background:#A259FF;color:#fff;}
 .trilha-nivel{font-size:0.74rem;color:var(--text-dim);font-family:var(--font-mono);}
 .trilha-card h3{font-family:var(--font-display);font-size:1.08rem;}
 .trilha-card p{font-size:0.88rem;flex:1;}
@@ -273,29 +322,26 @@ section{padding:4rem 0;}
   padding:1.6rem;display:flex;flex-direction:column;gap:10px;
 }
 .comunidade-card .emoji{font-size:1.8rem;}
+.comunidade-card .icon-img{width:32px;height:32px;object-fit:contain;display:block;}
 .comunidade-card h3{font-family:var(--font-display);font-size:1.05rem;}
 .comunidade-card p{font-size:0.9rem;}
 
-/* ============ DEPOIMENTOS ============ */
-.depoimentos-grid{
+/* ============ BLOG (chamada na home) ============ */
+.blog-cta{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.blog-cta-grid{
   display:grid;gap:1.2rem;max-width:1140px;margin:0 auto;padding:0 1.25rem;
   grid-template-columns:1fr;
 }
-@media(min-width:768px){.depoimentos-grid{grid-template-columns:repeat(3,1fr);}}
-.depo-card{
-  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
-  padding:1.6rem;display:flex;flex-direction:column;gap:18px;
+@media(min-width:768px){.blog-cta-grid{grid-template-columns:repeat(3,1fr);}}
+.blog-cta-card{
+  background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.6rem;display:flex;flex-direction:column;gap:10px;
 }
-.depo-card p{font-size:0.95rem;color:var(--text);font-style:italic;}
-.depo-autor{display:flex;align-items:center;gap:12px;}
-.avatar{
-  width:38px;height:38px;border-radius:50%;
-  background:linear-gradient(135deg,var(--purple),var(--pink));
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-display);font-weight:700;color:#fff;flex-shrink:0;
-}
-.depo-autor strong{display:block;font-size:0.88rem;}
-.depo-autor span{font-size:0.78rem;color:var(--text-dim);}
+.blog-cta-card .emoji{font-size:1.8rem;}
+.blog-cta-card .icon-img{width:32px;height:32px;object-fit:contain;display:block;}
+.blog-cta-card h3{font-family:var(--font-display);font-size:1.05rem;}
+.blog-cta-card p{font-size:0.9rem;}
+.blog-cta-cta{text-align:center;margin-top:2.2rem;padding:0 1.25rem;}
 
 /* ============ FOOTER ============ */
 .rodape{

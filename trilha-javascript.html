@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript na Prática | SOMA+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="trilhas.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      <span class="logo-text">SOMA<span class="plus">+</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-mobile" id="menu">
+      <ul>
+        <li><a href="trilhas.html">Trilhas</a></li>
+        <li><a href="index.html#comunidade">Comunidade</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ TRILHA HERO ============ -->
+  <section class="trilha-detail-hero">
+    <div class="trilha-detail-inner">
+      <div class="trilha-detail-info">
+        <span class="breadcrumb"><a href="index.html">início</a> / <a href="trilhas.html">trilhas</a> / JavaScript na Prática</span>
+
+        <div class="trilha-detail-meta">
+          <span class="lang-icon" style="background:#F0DB4F;color:#0E0B16;">JS</span>
+          <span class="trilha-nivel">Iniciante · recomendado após lógica de programação</span>
+        </div>
+
+        <h1>JavaScript na Prática</h1>
+        <p class="lead">Curadoria dos melhores conteúdos gratuitos para aprender JavaScript do zero e entender como a web funciona por trás dos cliques.</p>
+
+        <div class="trilha-stats">
+          <div class="trilha-stat">
+            <span class="num">6</span>
+            <span class="label">recursos curados</span>
+          </div>
+          <div class="trilha-stat">
+            <span class="num">100%</span>
+            <span class="label">gratuitos</span>
+          </div>
+          <div class="trilha-stat">
+            <span class="num">05</span>
+            <span class="label">alunas nesta trilha</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trilha-progress-card">
+        <h4>Como funciona</h4>
+        <p class="progress-caption">Cada recurso abaixo é de outro criador ou plataforma. O SOMA+ organiza a ordem; o conteúdo é mantido por quem o produziu.</p>
+        <a href="#recursos" class="btn btn-primary">Ver recursos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVISO DE CURADORIA ============ -->
+  <div class="curadoria-aviso">
+    <div class="aviso-card">
+      <span class="ic">🧭</span>
+      <p><strong>Isso é uma curadoria, não um curso próprio.</strong> Selecionamos o que há de melhor e gratuito sobre JavaScript na internet e organizamos numa ordem que faz sentido para quem está começando. Os links abrem direto no canal, site ou material do criador original.</p>
+    </div>
+  </div>
+
+  <!-- ============ RECURSOS CURADOS ============ -->
+  <section class="recursos-section" id="recursos">
+    <div class="section-head" style="margin-bottom:24px;padding:0;">
+      <span class="eyebrow">recursos, na ordem recomendada</span>
+      <h2>O que estudar, e em que ordem</h2>
+    </div>
+
+    <div class="recursos-list">
+      <article class="recurso-card">
+        <span class="recurso-tipo video">🎬</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Vídeo · Playlist completa</span>
+          </div>
+          <h3>Curso de JavaScript</h3>
+          <span class="fonte">Gustavo Guanabara · Curso em Vídeo</span>
+          <p>O clássico ponto de partida em português, do zero, explicando a lógica por trás de cada linha de JS.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.cursoemvideo.com/curso/javascript/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo ebook">📘</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Curso em texto · Gratuito</span>
+          </div>
+          <h3>JavaScript Algorithms and Data Structures</h3>
+          <span class="fonte">freeCodeCamp</span>
+          <p>Módulo completo com exercícios práticos para fixar fundamentos e lógica com JavaScript.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Documentação oficial</span>
+          </div>
+          <h3>JavaScript | MDN Web Docs</h3>
+          <span class="fonte">Mozilla · em português</span>
+          <p>A referência para consultar sempre que bater dúvida sobre uma função ou sintaxe específica.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo ebook">📘</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Curso em texto · Gratuito</span>
+          </div>
+          <h3>The Modern JavaScript Tutorial</h3>
+          <span class="fonte">javascript.info</span>
+          <p>Tutorial completo e muito respeitado pela comunidade, do básico a conceitos mais avançados.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🌐</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Plataforma · Em inglês, paga (com muito conteúdo grátis)</span>
+          </div>
+          <h3>Introduction to JavaScript</h3>
+          <span class="fonte">Codecademy</span>
+          <p>Prática interativa direto no navegador para fixar sintaxe e lógica com feedback imediato.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+      <article class="recurso-card">
+        <span class="recurso-tipo plataforma">🥋</span>
+        <div class="recurso-info">
+          <div class="recurso-top-row">
+            <span class="recurso-tag">Plataforma · Prática com desafios</span>
+          </div>
+          <h3>Codewars</h3>
+          <span class="fonte">Codewars</span>
+          <p>Resolva desafios (katas) de JavaScript de dificuldade crescente para treinar o raciocínio.</p>
+        </div>
+        <div class="recurso-action">
+          <a href="https://www.codewars.com/" target="_blank" rel="noopener noreferrer" class="recurso-link">Acessar conteúdo ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <div class="trilha-cta-final">
+    <div class="cta-card">
+      <h3>Travou em algum conteúdo?</h3>
+      <p>O fórum da comunidade está cheio de alunas que já passaram pelos mesmos vídeos e exercícios — pergunte sem vergonha.</p>
+      <a href="index.html#comunidade" class="btn btn-primary">Ir para a comunidade</a>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div class="rodape-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span class="logo-text">SOMA<span class="plus">+</span></span>
+        </a>
+        <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
+      </div>
+
+      <nav class="rodape-col">
+        <h5>Plataforma</h5>
+        <a href="trilhas.html">Trilhas</a>
+        <a href="index.html#comunidade">Comunidade</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <nav class="rodape-col">
+        <h5>Institucional</h5>
+        <a href="#">Sobre</a>
+        <a href="#">Parcerias</a>
+        <a href="#">Termos de uso</a>
+      </nav>
+
+      <div class="rodape-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:anaheloisa1809@gmail.com">anaheloisa1809@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="rodape-bottom">
+      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="trilhas.js"></script>
+</body>
+</html>

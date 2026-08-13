@@ -13,8 +13,7 @@
 
   <header class="topo">
     <a href="index.html" class="logo">
-      <span class="logo-mark">&lt;/&gt;</span>
-      <span class="logo-text">SOMA<span class="plus">+</span></span>
+      <img src="images/logo.png" alt="SOMA+" class="logo-img">
     </a>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
@@ -27,11 +26,22 @@
       <ul>
         <li><a href="trilhas.html">Trilhas</a></li>
         <li><a href="#comunidade">Comunidade</a></li>
-        <li><a href="#depoimentos">Histórias</a></li>
-        <li><a href="#" class="nav-entrar">Entrar</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- ============ HERO PRINCIPAL (banner de impacto) ============ -->
+  <section class="hero-banner">
+    <div class="hero-banner-media">
+      <img src="images/hero.png" alt="Mulher programando com ícones e o logo do SOMA+ flutuando ao redor da tela" loading="eager">
+    </div>
+    <div class="hero-banner-content">
+      <h1>Educar Mulheres, <span class="grad">Transformar Comunidades</span></h1>
+      <p class="lead">Guia digital gratuito para entrar em programação e comunidade para mulheres e meninas</p>
+      <a href="#trilhas" class="btn btn-primary">Saber mais</a>
+    </div>
+  </section>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
@@ -39,10 +49,10 @@
     <div class="hero-inner">
       <div class="hero-text">
         <span class="badge">
-          <span class="dot"></span> +500 alunas já estão no SOMA+
+          <span class="dot"></span> venha para o SOMA+ com a gente
         </span>
         <h1>Aprenda programação. <span class="grad">Cresça em comunidade.</span></h1>
-        <p class="lead">Trilhas gratuitas de Python, JavaScript e dados — feitas para quem está começando do zero, com outras mulheres ao lado em cada linha de código.</p>
+        <p class="lead">Trilhas gratuitas de Python, JavaScript e dados, feitas para quem está começando do zero, com outras mulheres ao lado em cada linha de código.</p>
         <div class="botoes">
           <a class="btn btn-primary" href="cadastro.html">Começar minha trilha</a>
           <a class="btn btn-outline" href="login.html">Entrar</a>
@@ -77,7 +87,7 @@
           <span class="trilha-nivel">Iniciante</span>
         </div>
         <h3>Python para Começar</h3>
-        <p>Lógica de programação, variáveis e seus primeiros scripts — sem pré-requisitos.</p>
+        <p>Lógica de programação, variáveis e seus primeiros scripts, sem pré-requisitos.</p>
         <span class="progress-label">9 recursos curados · trilha mais escolhida</span>
         <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
       </article>
@@ -90,7 +100,7 @@
         <h3>JavaScript na Prática</h3>
         <p>Construa páginas interativas e entenda como a web funciona por trás dos cliques.</p>
         <span class="progress-label">8 recursos curados</span>
-        <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+        <a href="trilha-javascript.html" class="trilha-link">Ver trilha →</a>
       </article>
 
       <article class="trilha-card">
@@ -101,7 +111,7 @@
         <h3>Dados do Zero ao Insight</h3>
         <p>Consultas, planilhas e os primeiros passos para trabalhar com análise de dados.</p>
         <span class="progress-label">7 recursos curados</span>
-        <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+        <a href="trilha-sql.html" class="trilha-link">Ver trilha →</a>
       </article>
 
       <article class="trilha-card">
@@ -112,7 +122,7 @@
         <h3>Git e Controle de Versão</h3>
         <p>Aprenda a versionar seu código e colaborar em projetos como faz qualquer time de dev.</p>
         <span class="progress-label">5 recursos curados</span>
-        <a href="trilha-detalhe.html" class="trilha-link">Ver trilha →</a>
+        <a href="trilha-git.html" class="trilha-link">Ver trilha →</a>
       </article>
 
     </div>
@@ -129,7 +139,7 @@
         <span class="eyebrow">por que o soma existe</span>
         <h2>Criei o SOMA porque sei como é difícil começar do zero.</h2>
         <p>Eu mesma ainda estou no primeiro ano da faculdade e estudo programação há poucos anos. Mas tudo o que aprendi até aqui eu quero compartilhar, para que outras meninas não desistam logo no início.</p>
-        <p>O SOMA não é só um espaço de aprendizado — é também uma rede de apoio, onde a gente cresce junto, troca experiência e se fortalece no caminho da tecnologia.</p>
+        <p>O SOMA não é só um espaço de aprendizado, é também uma rede de apoio, onde a gente cresce juntas, troca experiência e se fortalece no caminho da tecnologia.</p>
       </div>
       <div class="box col-50 image">
         <div class="visual-card terminal-mini" aria-hidden="true">
@@ -137,13 +147,13 @@
           <pre class="code-body small"><code>git log --author="você"
 
 commit a1b2c3d
-  primeiro script ✅
+  primeiro script 
 
 commit e4f5g6h
-  primeiro bug corrigido 🐛
+  primeiro bug corrigido 
 
 commit i7j8k9l
-  primeiro projeto no ar 🚀</code></pre>
+  primeiro projeto no ar </code></pre>
         </div>
       </div>
     </article>
@@ -152,7 +162,7 @@ commit i7j8k9l
       <div class="box col-50 text">
         <span class="eyebrow">juntas somos +</span>
         <h2>Uma plataforma para todas, pois juntas somos <span class="grad">+</span></h2>
-        <p>Trilhas de aprendizado, indicações de cursos, comunidades de apoio e dicas de carreira para você escolher o caminho certo na tecnologia — no seu ritmo, sem cobrança.</p>
+        <p>Trilhas de aprendizado, indicações de cursos, comunidades de apoio e dicas de carreira para você escolher o caminho certo na tecnologia no seu ritmo, sem cobrança.</p>
         <div class="botoes">
           <a class="btn btn-primary" href="#trilhas">Começar agora!</a>
         </div>
@@ -180,61 +190,51 @@ commit i7j8k9l
 
     <div class="comunidade-grid">
       <div class="comunidade-card">
-        <span class="emoji">👩‍💻</span>
+        <span class="emoji"><img src="icons/this_computer.png" alt="" class="icon-img"></span>
         <h3>Grupos de estudo</h3>
         <p>Encontros semanais por trilha, para praticar junto e tirar dúvidas em tempo real.</p>
       </div>
       <div class="comunidade-card">
-        <span class="emoji">🧑‍🏫</span>
+        <span class="emoji"><img src="icons/mail.png" alt="" class="icon-img"></span>
         <h3>Mentoria entre alunas</h3>
-        <p>Quem já passou pelo módulo te ajuda a passar também — ensinar é a melhor forma de fixar o conteúdo.</p>
+        <p>Quem já passou pelo módulo te ajuda a passar também ensinar é a melhor forma de fixar o conteúdo.</p>
       </div>
       <div class="comunidade-card">
-        <span class="emoji">💬</span>
+        <span class="emoji"><img src="icons/discord.png" alt="" class="icon-img"></span>
         <h3>Fórum sem julgamento</h3>
         <p>Pergunta de principiante é bem-vinda. Aqui todo mundo já travou no mesmo erro de sintaxe.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ DEPOIMENTOS ============ -->
-  <section class="depoimentos" id="depoimentos">
+  <!-- ============ BLOG ============ -->
+  <section class="blog-cta" id="blog">
     <div class="section-head">
-      <span class="eyebrow">quem já passou por aqui</span>
-      <h2>Histórias de quem começou do zero</h2>
+      <span class="eyebrow">novidades</span>
+      <h2>Acompanhe o blog do SOMA+</h2>
+      <p>Vagas de emprego para mulheres em tech, dicas práticas e artigos sobre programação, direto por aqui, sem enrolação.</p>
     </div>
 
-    <div class="depoimentos-grid">
-      <article class="depo-card">
-        <p>"Eu não sabia nem o que era um terminal. Hoje já fiz minha primeira automação em Python no trabalho."</p>
-        <div class="depo-autor">
-          <span class="avatar">M</span>
-          <div>
-            <strong>Mariana S.</strong>
-            <span>Trilha de Python</span>
-          </div>
-        </div>
-      </article>
-      <article class="depo-card">
-        <p>"O grupo de estudo me fez continuar nas semanas que eu ia desistir. Foi a diferença entre parar e seguir."</p>
-        <div class="depo-autor">
-          <span class="avatar">J</span>
-          <div>
-            <strong>Joana R.</strong>
-            <span>Trilha de JavaScript</span>
-          </div>
-        </div>
-      </article>
-      <article class="depo-card">
-        <p>"Consegui meu primeiro estágio em dados depois de terminar a trilha. Coloquei o projeto final no portfólio."</p>
-        <div class="depo-autor">
-          <span class="avatar">L</span>
-          <div>
-            <strong>Letícia A.</strong>
-            <span>Trilha de Dados</span>
-          </div>
-        </div>
-      </article>
+    <div class="blog-cta-grid">
+      <div class="blog-cta-card">
+        <span class="emoji"><img src="icons/tools.png" alt="" class="icon-img"></span>
+        <h3>Vagas para mulheres</h3>
+        <p>Oportunidades de estágio e primeiro emprego em tecnologia, selecionadas e atualizadas por aqui.</p>
+      </div>
+      <div class="blog-cta-card">
+        <span class="emoji"><img src="icons/search.png" alt="" class="icon-img"></span>
+        <h3>Dicas práticas</h3>
+        <p>Currículo, portfólio, entrevistas e como se preparar para o mercado sem se perder no caminho.</p>
+      </div>
+      <div class="blog-cta-card">
+        <span class="emoji"><img src="icons/text_file.png" alt="" class="icon-img"></span>
+        <h3>Artigos sobre programação</h3>
+        <p>Conteúdo escrito para tirar dúvidas comuns de quem está começando, sem jargão desnecessário.</p>
+      </div>
+    </div>
+
+    <div class="blog-cta-cta">
+      <a href="blog.html" class="btn btn-primary">Visitar o blog</a>
     </div>
   </section>
 
@@ -243,8 +243,7 @@ commit i7j8k9l
     <div class="rodape-grid">
       <div class="rodape-brand">
         <a href="#" class="logo">
-          <span class="logo-mark">&lt;/&gt;</span>
-          <span class="logo-text">SOMA<span class="plus">+</span></span>
+          <img src="images/logo.png" alt="SOMA+" class="logo-img">
         </a>
         <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
       </div>
@@ -253,7 +252,7 @@ commit i7j8k9l
         <h5>Plataforma</h5>
         <a href="#trilhas">Trilhas</a>
         <a href="#comunidade">Comunidade</a>
-        <a href="#depoimentos">Histórias</a>
+        <a href="blog.html">Blog</a>
         <a href="#">Entrar</a>
       </nav>
 
@@ -271,7 +270,7 @@ commit i7j8k9l
     </div>
 
     <div class="rodape-bottom">
-      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+      <p>© 2026 SOMA+. Feito com ❤️.</p>
     </div>
   </footer>
 

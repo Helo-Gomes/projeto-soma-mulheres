@@ -69,6 +69,7 @@
 }
 .empty-state.visible{display:block;}
 .empty-state .emoji{font-size:2rem;display:block;margin-bottom:12px;}
+.empty-state .icon-img{width:36px;height:36px;object-fit:contain;display:block;margin:0 auto 12px;}
 .empty-state h3{font-family:var(--font-display);font-size:1.1rem;margin-bottom:8px;}
 .empty-state p{font-size:0.9rem;}
 
@@ -77,15 +78,21 @@
   padding:2.5rem 1.25rem;border-bottom:1px solid var(--border);
 }
 .trilha-detail-inner{
-  max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:24px;
+  max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:32px;
 }
 @media(min-width:880px){
-  .trilha-detail-inner{flex-direction:row;justify-content:space-between;align-items:flex-end;}
+  .trilha-detail-inner{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 300px;
+    align-items:end;
+    gap:48px;
+  }
 }
 
+.trilha-detail-info{min-width:0;}
 .trilha-detail-meta{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
 .trilha-detail-info h1{font-size:clamp(1.8rem,5vw,2.5rem);margin-bottom:12px;}
-.trilha-detail-info .lead{font-size:1rem;max-width:520px;color:var(--text-muted);margin-bottom:18px;}
+.trilha-detail-info .lead{font-size:1rem;max-width:620px;color:var(--text-muted);margin-bottom:18px;}
 
 .trilha-stats{display:flex;gap:24px;flex-wrap:wrap;}
 .trilha-stat{display:flex;flex-direction:column;}
@@ -94,7 +101,7 @@
 
 .trilha-progress-card{
   background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
-  padding:1.5rem;min-width:240px;flex-shrink:0;
+  padding:1.5rem;width:100%;min-width:240px;flex-shrink:0;
 }
 .trilha-progress-card h4{font-family:var(--font-display);font-size:1rem;margin-bottom:6px;}
 .trilha-progress-card .progress-caption{font-size:0.85rem;color:var(--text-dim);margin-bottom:18px;}
@@ -110,6 +117,7 @@
   padding:1.1rem 1.3rem;
 }
 .aviso-card .ic{font-size:1.2rem;flex-shrink:0;line-height:1.4;}
+.aviso-card .ic .icon-img{width:26px;height:26px;object-fit:contain;display:block;}
 .aviso-card p{font-size:0.88rem;color:var(--text-muted);}
 .aviso-card strong{color:var(--text);}
 
@@ -129,6 +137,7 @@
   display:flex;align-items:center;justify-content:center;
   font-size:1.2rem;
 }
+.recurso-tipo .icon-img{width:24px;height:24px;object-fit:contain;display:block;}
 .recurso-tipo.video{background:rgba(255,79,163,0.15);}
 .recurso-tipo.ebook{background:rgba(232,197,71,0.15);}
 .recurso-tipo.plataforma{background:rgba(92,224,160,0.15);}
@@ -174,3 +183,29 @@
 }
 .cta-card h3{font-family:var(--font-display);font-size:1.3rem;margin-bottom:10px;}
 .cta-card p{margin-bottom:20px;max-width:440px;margin-left:auto;margin-right:auto;}
+
+/* ============ SUBSEÇÕES E MATERIAL COMPLEMENTAR ============ */
+.subsecao{margin-top:1rem;}
+
+.ferramentas-grid{
+  display:grid;gap:1rem;
+  grid-template-columns:1fr;
+}
+@media(min-width:640px){.ferramentas-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:960px){.ferramentas-grid{grid-template-columns:repeat(3,1fr);}}
+
+.ferramenta-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.2rem 1.3rem;display:flex;gap:12px;align-items:flex-start;
+  transition:border-color 0.2s ease;
+}
+.ferramenta-card:hover{border-color:var(--purple-soft);}
+.ferramenta-tipo{
+  width:38px;height:38px;border-radius:10px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:1.05rem;
+  background:var(--surface-2);
+}
+.ferramenta-tipo .icon-img{width:20px;height:20px;object-fit:contain;display:block;}
+.ferramenta-info h4{font-family:var(--font-display);font-size:0.95rem;margin-bottom:4px;}
+.ferramenta-info p{font-size:0.82rem;margin-bottom:6px;}
+.ferramenta-info a{font-size:0.82rem;font-weight:700;color:var(--pink-soft);}

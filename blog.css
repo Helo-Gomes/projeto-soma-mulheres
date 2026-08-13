@@ -1,0 +1,35 @@
+/* ============================================
+   SOMA+ — Estilos da página de Blog
+   Depende dos tokens definidos em style.css
+============================================ */
+
+.blog-section{max-width:1140px;margin:0 auto;padding:2.5rem 1.25rem 4rem;}
+
+.blog-grid{
+  display:grid;gap:1.2rem;
+  grid-template-columns:1fr;
+}
+@media(min-width:680px){.blog-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1024px){.blog-grid{grid-template-columns:repeat(3,1fr);}}
+
+.post-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.5rem;display:flex;flex-direction:column;gap:10px;
+  transition:border-color 0.2s ease, transform 0.2s ease;
+}
+.post-card:hover{border-color:var(--purple-soft);transform:translateY(-3px);}
+
+.post-categoria{
+  font-family:var(--font-mono);font-size:0.72rem;text-transform:lowercase;
+  padding:4px 10px;border-radius:20px;width:fit-content;
+}
+.post-categoria.vaga{background:rgba(92,224,160,0.15);color:var(--green);}
+.post-categoria.dica{background:rgba(232,197,71,0.15);color:var(--yellow);}
+.post-categoria.artigo{background:rgba(255,79,163,0.15);color:var(--pink-soft);}
+
+.post-data{font-family:var(--font-mono);font-size:0.74rem;color:var(--text-dim);}
+.post-card h3{font-family:var(--font-display);font-size:1.08rem;}
+.post-card p{font-size:0.88rem;flex:1;}
+.post-link{font-size:0.88rem;font-weight:700;color:var(--pink-soft);margin-top:4px;}
+
+.blog-section .empty-state{margin-top:2rem;}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | SOMA+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="trilhas.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      <span class="logo-text">SOMA<span class="plus">+</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-mobile" id="menu">
+      <ul>
+        <li><a href="trilhas.html">Trilhas</a></li>
+        <li><a href="index.html#comunidade">Comunidade</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="breadcrumb"><a href="index.html">início</a> / blog</span>
+      <h1>Blog</h1>
+      <p class="lead">Vagas de emprego para mulheres em tech, dicas práticas e artigos sobre programação — escritos para quem está começando do zero.</p>
+    </div>
+  </section>
+
+  <!-- ============ POSTS ============ -->
+  <section class="blog-section">
+    <div class="blog-grid" id="blogGrid">
+
+      <!--
+        MODELO DE POST — copie o bloco abaixo para cada novo conteúdo,
+        cole dentro de #blogGrid (fora do comentário) e ajuste os dados.
+
+        Categorias disponíveis: "vaga", "dica" ou "artigo"
+        (controlam a cor da etiqueta, definida em blog.css).
+
+        <article class="post-card">
+          <span class="post-categoria vaga">Vaga</span>
+          <span class="post-data">12 ago 2026</span>
+          <h3>Título do post</h3>
+          <p>Resumo curto do conteúdo, de uma a duas linhas.</p>
+          <a href="#" class="post-link">Ler mais →</a>
+        </article>
+      -->
+
+    </div>
+
+    <div class="empty-state visible" id="blogEmpty">
+      <span class="emoji">✍️</span>
+      <h3>Os primeiros posts estão a caminho</h3>
+      <p>Em breve você encontra por aqui vagas para mulheres em tech, dicas práticas e artigos sobre programação.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div class="rodape-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">&lt;/&gt;</span>
+          <span class="logo-text">SOMA<span class="plus">+</span></span>
+        </a>
+        <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
+      </div>
+
+      <nav class="rodape-col">
+        <h5>Plataforma</h5>
+        <a href="trilhas.html">Trilhas</a>
+        <a href="index.html#comunidade">Comunidade</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <nav class="rodape-col">
+        <h5>Institucional</h5>
+        <a href="#">Sobre</a>
+        <a href="#">Parcerias</a>
+        <a href="#">Termos de uso</a>
+      </nav>
+
+      <div class="rodape-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:anaheloisa1809@gmail.com">anaheloisa1809@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="rodape-bottom">
+      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
