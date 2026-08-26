@@ -1,0 +1,109 @@
+/* ============================================
+   SOMA+ — Estilos das páginas de Roadmap
+   (mapa visual e interativo de aprendizado)
+   Depende dos tokens definidos em style.css
+   e dos componentes de trilhas.css (breadcrumb, page-hero, cta-card)
+============================================ */
+
+/* ============ LEGENDA DE STATUS ============ */
+.roadmap-legend{
+  max-width:820px;margin:0 auto 0.5rem;padding:0 1.25rem;
+  display:flex;flex-wrap:wrap;gap:10px 22px;
+}
+.legend-item{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--font-mono);font-size:0.76rem;color:var(--text-dim);
+  text-transform:lowercase;
+}
+.legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.legend-dot.disponivel{background:var(--green);}
+.legend-dot.embreve{background:var(--text-dim);opacity:0.55;}
+.legend-dot.andamento{background:var(--yellow);}
+.legend-dot.concluido{background:var(--pink);}
+
+.roadmap-legend-note{
+  max-width:820px;margin:0.75rem auto 0;padding:0 1.25rem;
+  font-size:0.84rem;color:var(--text-dim);
+}
+
+/* ============ LINHA DO CAMINHO ============ */
+.roadmap-path{
+  list-style:none;position:relative;
+  max-width:820px;margin:2rem auto 0;padding:0 1.25rem 3rem;
+}
+.roadmap-path::before{
+  content:"";position:absolute;top:8px;bottom:28px;left:33px;width:3px;
+  background:linear-gradient(var(--purple),var(--pink));border-radius:3px;
+}
+
+/* ============ NÓ / ETAPA ============ */
+.roadmap-node{position:relative;padding-left:60px;margin-bottom:1.6rem;}
+.roadmap-node::before{
+  content:"";position:absolute;left:33px;top:22px;width:14px;height:14px;
+  background:var(--bg);border:3px solid var(--purple-soft);border-radius:50%;
+  transform:translateX(-50%);z-index:1;
+}
+.roadmap-node.status-embreve::before{border-color:var(--text-dim);}
+
+.node-card{
+  display:flex;align-items:flex-start;gap:14px;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.1rem 1.3rem;
+  transition:border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+a.node-card:hover{
+  border-color:var(--purple-soft);transform:translateX(4px);background:var(--surface-2);
+}
+a.node-card:active{transform:translateX(2px);}
+
+.status-embreve .node-card{
+  border-style:dashed;opacity:0.72;cursor:not-allowed;
+}
+
+.node-index{
+  width:34px;height:34px;border-radius:10px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-weight:700;font-size:0.85rem;
+  background:var(--surface-2);color:var(--text-dim);border:1px solid var(--border);
+}
+.status-disponivel .node-index{
+  background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;border-color:transparent;
+}
+
+.node-body{flex:1;min-width:0;}
+.node-body h3{font-family:var(--font-display);font-size:1.02rem;margin-bottom:4px;}
+.node-body p{font-size:0.86rem;color:var(--text-muted);}
+
+.node-badge{
+  font-family:var(--font-mono);font-size:0.68rem;text-transform:lowercase;
+  padding:3px 9px;border-radius:20px;flex-shrink:0;white-space:nowrap;margin-top:2px;
+}
+.status-disponivel .node-badge{background:rgba(92,224,160,0.15);color:var(--green);}
+.status-embreve .node-badge{background:var(--surface-2);color:var(--text-dim);}
+
+/* ============ RAMIFICAÇÕES ============ */
+.roadmap-branch .branch-label{
+  font-family:var(--font-mono);font-size:0.76rem;color:var(--text-dim);
+  margin-bottom:10px;text-transform:lowercase;display:flex;align-items:center;gap:8px;
+}
+.branch-label::before{content:"↳";color:var(--pink-soft);font-family:var(--font-body);}
+
+.branch-options{display:flex;flex-wrap:wrap;gap:12px;}
+.branch-options .node-card{flex:1 1 220px;}
+.branch-or{
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-size:0.74rem;color:var(--text-dim);
+  padding:0 2px;
+}
+@media(max-width:600px){.branch-or{display:none;}}
+
+/* ============ RESPONSIVO — DESKTOP ============ */
+@media (min-width:860px){
+  .roadmap-path{padding:0 1.25rem 4rem;margin-top:2.5rem;}
+  .roadmap-node{padding-left:74px;margin-bottom:2rem;}
+  .roadmap-node::before{left:33px;width:16px;height:16px;top:26px;}
+  .node-card{padding:1.3rem 1.6rem;}
+  .node-index{width:38px;height:38px;font-size:0.92rem;}
+  .node-body h3{font-size:1.1rem;}
+  .roadmap-branch{padding-left:74px;}
+}

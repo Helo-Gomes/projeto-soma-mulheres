@@ -7,15 +7,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="trilhas.css" />
   <link rel="stylesheet" href="blog.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
 
   <header class="topo">
     <a href="index.html" class="logo">
-      <span class="logo-mark">&lt;/&gt;</span>
-      <span class="logo-text">SOMA<span class="plus">+</span></span>
+      <img src="images/logo.png" alt="SOMA+" class="logo-img">
     </a>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
@@ -42,32 +43,59 @@
     </div>
   </section>
 
-  <!-- ============ POSTS ============ -->
-  <section class="blog-section">
-    <div class="blog-grid" id="blogGrid">
 
-      <!--
-        MODELO DE POST — copie o bloco abaixo para cada novo conteúdo,
-        cole dentro de #blogGrid (fora do comentário) e ajuste os dados.
-
-        Categorias disponíveis: "vaga", "dica" ou "artigo"
-        (controlam a cor da etiqueta, definida em blog.css).
-
-        <article class="post-card">
-          <span class="post-categoria vaga">Vaga</span>
-          <span class="post-data">12 ago 2026</span>
-          <h3>Título do post</h3>
-          <p>Resumo curto do conteúdo, de uma a duas linhas.</p>
-          <a href="#" class="post-link">Ler mais →</a>
-        </article>
-      -->
-
+  <!-- ============ MATÉRIAS ============ -->
+  <section class="materias-cta">
+    <div class="section-head">
+      <span class="eyebrow">matérias</span>
+      <h2>Leituras completas do SOMA+</h2>
+      <p>Artigos mais longos sobre carreira, tecnologia e as histórias de quem está construindo esse caminho.</p>
     </div>
 
-    <div class="empty-state visible" id="blogEmpty">
-      <span class="emoji">✍️</span>
-      <h3>Os primeiros posts estão a caminho</h3>
-      <p>Em breve você encontra por aqui vagas para mulheres em tech, dicas práticas e artigos sobre programação.</p>
+    <div class="materias-grid" id="materiasGrid">
+
+      <!--
+        MODELO DE CARD DE MATÉRIA — copie o bloco abaixo para cada nova matéria,
+        cole dentro de #materiasGrid e ajuste os dados (thumbnail, categoria, título,
+        resumo, data e o link para a página materia.html correspondente).
+      -->
+
+      <article class="materia-card">
+        <a href="materia1.html" class="materia-thumb" aria-hidden="true">
+          <img src="images/materia1.png" alt="" class="materia-thumb">
+        </a>
+        <div class="materia-body">
+          <span class="post-categoria artigo">Artigo</span>
+          <h3><a href="materia1.html">Quer entrar na área de tecnologia? Conheça os caminhos, cursos, faculdades...</a></h3>
+          <p>Se você quer se tornar uma profissional de tecnologia, mas ainda não sabe por onde começar, saiba que existem diversos caminhos possíveis.</p>
+          <span class="post-data">26 ago 2026</span>
+        </div>
+      </article>
+
+      <article class="materia-card">
+        <a href="materia2.html" class="materia-thumb" aria-hidden="true">
+          <img src="images/materia2.png" alt="" class="materia-thumb">
+        </a>
+        <div class="materia-body">
+          <span class="post-categoria artigo">Artigo</span>
+          <h3><a href="materia2.html">Rede de apoio para mães solo durante os estudos</a></h3>
+          <p>Quando falamos sobre acesso à educação e à capacitação profissional, é importante lembrar que nem todas as pessoas começam do mesmo lugar.</p>
+          <span class="post-data">20 ago 2026</span>
+        </div>
+      </article>
+
+      <article class="materia-card">
+        <a href="materia3.html" class="materia-thumb" aria-hidden="true">
+          <img src="images/materia3.jpg" alt="" class="materia-thumb">
+        </a>
+        <div class="materia-body">
+          <span class="post-categoria vaga">Vaga</span>
+          <h3><a href="materia3.html">10 oportunidades para mulheres e pessoas LGBTQIAPN+ que querem crescer na tecnologia em 2026</a></h3>
+          <p>Entrar ou crescer na área de tecnologia pode parecer um desafio, especialmente para grupos que ainda são sub-representados no setor.</p>
+          <span class="post-data">26 ago 2026</span>
+        </div>
+      </article>
+
     </div>
   </section>
 
@@ -76,8 +104,7 @@
     <div class="rodape-grid">
       <div class="rodape-brand">
         <a href="index.html" class="logo">
-          <span class="logo-mark">&lt;/&gt;</span>
-          <span class="logo-text">SOMA<span class="plus">+</span></span>
+          <img src="images/logo.png" alt="SOMA+" class="logo-img">
         </a>
         <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
       </div>

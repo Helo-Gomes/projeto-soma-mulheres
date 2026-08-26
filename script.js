@@ -64,3 +64,16 @@ function typeWriter(){
 }
 
 typeWriter();
+
+// ===== ACCORDION DE FAQ =====
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+
+  question.addEventListener('click', () => {
+    const estaAberto = item.classList.contains('aberto');
+    item.classList.toggle('aberto');
+    question.setAttribute('aria-expanded', String(!estaAberto));
+  });
+});

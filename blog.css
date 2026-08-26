@@ -32,4 +32,45 @@
 .post-card p{font-size:0.88rem;flex:1;}
 .post-link{font-size:0.88rem;font-weight:700;color:var(--pink-soft);margin-top:4px;}
 
+.post-links{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+.post-links .post-link{display:block;margin-top:0;}
+
 .blog-section .empty-state{margin-top:2rem;}
+
+/* ============ MATÉRIAS (blog.html) ============ */
+.materias-cta{padding:1rem 0 4rem;}
+
+.materias-grid{
+  display:grid;gap:1.2rem;max-width:1140px;margin:0 auto;padding:0 1.25rem;
+  grid-template-columns:1fr;
+}
+@media(min-width:680px){.materias-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1024px){.materias-grid{grid-template-columns:repeat(3,1fr);}}
+
+.materia-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:border-color 0.2s ease, transform 0.2s ease;
+}
+.materia-card:hover{border-color:var(--purple-soft);transform:translateY(-3px);}
+
+.materia-thumb{
+  display:flex;align-items:center;justify-content:center;
+  aspect-ratio:16/9;width:100%;
+  background:linear-gradient(135deg, var(--surface-2), var(--surface));
+  border-bottom:1px solid var(--border);
+  position:relative;overflow:hidden;
+}
+.materia-thumb::after{
+  content:"imagem em breve";
+  position:absolute;bottom:8px;right:10px;
+  font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);
+  text-transform:lowercase;
+}
+.materia-thumb-icon{width:34px;height:34px;object-fit:contain;opacity:0.85;}
+
+.materia-body{padding:1.4rem;display:flex;flex-direction:column;gap:8px;flex:1;}
+.materia-body h3{font-family:var(--font-display);font-size:1.05rem;}
+.materia-body h3 a{color:var(--text);}
+.materia-body h3 a:hover{color:var(--pink-soft);}
+.materia-body p{font-size:0.88rem;flex:1;}

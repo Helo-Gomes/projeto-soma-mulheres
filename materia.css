@@ -1,0 +1,103 @@
+/* ============================================
+   SOMA+ — Estilos da página de Matéria (post individual)
+   Depende dos tokens definidos em style.css
+============================================ */
+
+/* ============ HERO DA MATÉRIA ============ */
+.materia-hero{
+  padding:2.5rem 1.25rem 0;
+}
+.materia-hero-inner{max-width:760px;margin:0 auto;}
+.materia-hero-inner .breadcrumb{margin-bottom:18px;}
+.materia-hero-inner .post-categoria{margin-bottom:14px;}
+.materia-hero-inner h1{
+  font-size:clamp(1.8rem,5vw,2.6rem);margin-bottom:16px;
+}
+.materia-meta{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--font-mono);font-size:0.8rem;color:var(--text-dim);
+}
+.materia-dot{opacity:0.6;}
+
+/* ============ IMAGEM DE CAPA ============ */
+.materia-cover{
+  max-width:900px;margin:2rem auto 0;padding:0 1.25rem;
+}
+.materia-cover-placeholder{
+  aspect-ratio:16/8;width:100%;border-radius:var(--radius);
+  background:linear-gradient(135deg, var(--surface-2), var(--surface));
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.materia-cover-placeholder::after{
+  content:"imagem de capa em breve";
+  position:absolute;bottom:14px;right:18px;
+  font-family:var(--font-mono);font-size:0.72rem;color:var(--text-dim);
+  text-transform:lowercase;
+}
+.materia-cover-icon{width:56px;height:56px;object-fit:contain;opacity:0.85;}
+
+/* ============ CORPO DO ARTIGO ============ */
+.materia-article{
+  max-width:700px;margin:0 auto;padding:2.5rem 1.25rem 1rem;
+}
+.materia-article .lead-paragraph{
+  font-size:1.1rem;color:var(--text);margin-bottom:1.6rem;
+}
+.materia-article h2{
+  font-size:1.4rem;margin:2.2rem 0 1rem;
+}
+.materia-article h3{
+  font-size:1.15rem;margin:1.8rem 0 0.8rem;
+}
+.materia-article p{
+  font-size:1rem;color:var(--text-muted);margin-bottom:1.2rem;
+}
+.materia-article ul,
+.materia-article ol{
+  margin:0 0 1.2rem 1.3rem;color:var(--text-muted);
+}
+.materia-article li{
+  font-size:1rem;margin-bottom:0.5rem;
+}
+.materia-article a{
+  color:var(--pink-soft);font-weight:600;text-decoration:underline;text-underline-offset:3px;
+}
+.materia-article a:hover{color:var(--pink);}
+
+.materia-article code{
+  font-family:var(--font-mono);font-size:0.85em;color:var(--pink-soft);
+  background:var(--surface);border:1px solid var(--border);
+  padding:2px 6px;border-radius:4px;
+}
+
+.materia-article blockquote{
+  margin:1.8rem 0;padding:1rem 1.4rem;
+  border-left:3px solid var(--purple-soft);
+  background:var(--surface);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-family:var(--font-display);font-size:1.05rem;color:var(--text);
+}
+
+.materia-article figure{margin:1.8rem 0;}
+.materia-article figcaption{
+  font-family:var(--font-mono);font-size:0.75rem;color:var(--text-dim);
+  margin-top:8px;text-align:center;
+}
+
+/* ============ TAGS DA MATÉRIA ============ */
+.materia-tags{
+  max-width:700px;margin:1rem auto 0;padding:0 1.25rem;
+  display:flex;gap:8px;flex-wrap:wrap;
+}
+.materia-tag{
+  font-family:var(--font-mono);font-size:0.76rem;color:var(--text-muted);
+  background:var(--surface);border:1px solid var(--border);
+  padding:6px 14px;border-radius:30px;
+}
+
+/* ============ VOLTAR / CTA FINAL ============ */
+.materia-voltar{
+  max-width:700px;margin:2.5rem auto 4rem;padding:0 1.25rem;
+  text-align:center;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título da matéria de exemplo | SOMA+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="trilhas.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="materia.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="SOMA+" class="logo-img">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-mobile" id="menu">
+      <ul>
+        <li><a href="trilhas.html">Trilhas</a></li>
+        <li><a href="index.html#comunidade">Comunidade</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ HERO DA MATÉRIA ============ -->
+  <!--
+    Troque a categoria (vaga / dica / artigo), o título, a data e o autor
+    para cada nova matéria publicada.
+  -->
+  <section class="materia-hero">
+    <div class="materia-hero-inner">
+      <span class="breadcrumb"><a href="index.html">início</a> / <a href="blog.html">blog</a> / matéria</span>
+
+      <span class="post-categoria artigo">Artigo</span>
+      <h1>Título da matéria de exemplo</h1>
+
+      <div class="materia-meta">
+        <span class="materia-autor">Equipe SOMA+</span>
+        <span class="materia-dot">•</span>
+        <span class="materia-data">26 ago 2026</span>
+        <span class="materia-dot">•</span>
+        <span class="materia-tempo">5 min de leitura</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IMAGEM DE CAPA ============ -->
+  <!-- Troque o placeholder abaixo por uma <img src="images/..."> quando tiver a imagem de capa real -->
+  <div class="materia-cover">
+    <div class="materia-cover-placeholder" aria-hidden="true">
+      <img src="icons/text_file.png" alt="" class="materia-cover-icon">
+    </div>
+  </div>
+
+  <!-- ============ CORPO DO ARTIGO ============ -->
+  <article class="materia-article">
+    <p class="lead-paragraph">Este é um parágrafo de abertura de exemplo. Ele costuma resumir o assunto da matéria em uma ou duas frases, com uma fonte um pouco maior para chamar a atenção de quem chegou até aqui.</p>
+
+    <p>Este é um parágrafo de corpo comum. Substitua todo o conteúdo desta página pelo texto real da matéria — a estrutura de títulos, parágrafos, listas e citações abaixo é só um guia de formatação para manter a identidade visual do SOMA+ em qualquer post novo.</p>
+
+    <h2>Um subtítulo de seção</h2>
+    <p>Use subtítulos (<code>&lt;h2&gt;</code>) para dividir a matéria em blocos de leitura mais curtos. Isso ajuda quem está lendo pelo celular a escanear o conteúdo e voltar depois para o trecho que interessa.</p>
+
+    <h3>Um subtítulo menor</h3>
+    <p>Use <code>&lt;h3&gt;</code> para dividir ainda mais um subtítulo, quando fizer sentido.</p>
+
+    <ul>
+      <li>Itens de lista funcionam bem para passos, dicas rápidas ou uma coleção de exemplos.</li>
+      <li>Mantenha cada item curto — de preferência uma frase.</li>
+      <li>Você pode misturar listas com parágrafos ao longo do texto.</li>
+    </ul>
+
+    <blockquote>Use uma citação em destaque como essa para reforçar uma frase importante da matéria ou o depoimento de alguém.</blockquote>
+
+    <p>Feche a matéria com um parágrafo de conclusão, retomando a ideia principal ou convidando quem leu a dar o próximo passo — seja explorar uma trilha, entrar na comunidade ou se candidatar a uma vaga.</p>
+  </article>
+
+  <div class="materia-tags">
+    <span class="materia-tag">carreira</span>
+    <span class="materia-tag">comunidade</span>
+    <span class="materia-tag">tecnologia</span>
+  </div>
+
+  <!-- ============ VOLTAR PARA O BLOG ============ -->
+  <div class="materia-voltar">
+    <a href="blog.html" class="btn btn-outline">← Voltar para o blog</a>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div class="rodape-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="SOMA+" class="logo-img">
+        </a>
+        <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
+      </div>
+
+      <nav class="rodape-col">
+        <h5>Plataforma</h5>
+        <a href="trilhas.html">Trilhas</a>
+        <a href="index.html#comunidade">Comunidade</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <nav class="rodape-col">
+        <h5>Institucional</h5>
+        <a href="#">Sobre</a>
+        <a href="#">Parcerias</a>
+        <a href="#">Termos de uso</a>
+      </nav>
+
+      <div class="rodape-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:anaheloisa1809@gmail.com">anaheloisa1809@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="rodape-bottom">
+      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap Back-end | SOMA+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="trilhas.css" />
+  <link rel="stylesheet" href="roadmap.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="SOMA+" class="logo-img">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-mobile" id="menu">
+      <ul>
+        <li><a href="trilhas.html">Trilhas</a></li>
+        <li><a href="roadmap-front-end.html">Roadmap Front-end</a></li>
+        <li><a href="roadmap-back-end.html">Roadmap Back-end</a></li>
+        <li><a href="index.html#comunidade">Comunidade</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="breadcrumb"><a href="index.html">início</a> / <a href="trilhas.html">trilhas</a> / roadmap back-end</span>
+      <h1>Roadmap de Back-end</h1>
+      <p class="lead">Um mapa visual do caminho recomendado para quem quer aprender back-end do zero. Cada etapa disponível te leva direto para a trilha correspondente aqui no SOMA+.</p>
+    </div>
+  </section>
+
+  <!-- ============ LEGENDA ============ -->
+  <div class="roadmap-legend">
+    <span class="legend-item"><span class="legend-dot disponivel"></span> disponível agora</span>
+    <span class="legend-item"><span class="legend-dot andamento"></span> em andamento</span>
+    <span class="legend-item"><span class="legend-dot concluido"></span> concluída</span>
+    <span class="legend-item"><span class="legend-dot embreve"></span> em breve</span>
+  </div>
+  <p class="roadmap-legend-note">Este roadmap já está preparado para acompanhar seu progresso trilha por trilha. Por enquanto, cada etapa aparece como <strong>disponível</strong> (já tem trilha aberta aqui no SOMA+) ou <strong>em breve</strong> (ainda estamos preparando o conteúdo).</p>
+
+  <!-- ============ CAMINHO ============ -->
+  <ol class="roadmap-path">
+
+    <li class="roadmap-node status-disponivel">
+      <a href="trilha-logica.html" class="node-card">
+        <span class="node-index">1</span>
+        <div class="node-body">
+          <h3>Lógica e fundamentos</h3>
+          <p>Variáveis, condicionais e repetição — a base antes de qualquer linguagem.</p>
+        </div>
+        <span class="node-badge">disponível</span>
+      </a>
+    </li>
+
+    <li class="roadmap-node roadmap-branch status-disponivel">
+      <div class="branch-label">escolha da linguagem</div>
+      <div class="branch-options">
+        <a href="trilha-detalhe.html" class="node-card status-disponivel">
+          <span class="node-index">2a</span>
+          <div class="node-body">
+            <h3>Python</h3>
+            <p>Sintaxe simples, ótima porta de entrada para o back-end.</p>
+          </div>
+          <span class="node-badge">disponível</span>
+        </a>
+        <span class="branch-or">ou</span>
+        <a href="trilha-java.html" class="node-card status-disponivel">
+          <span class="node-index">2b</span>
+          <div class="node-body">
+            <h3>Java</h3>
+            <p>Tipagem forte e a base usada em sistemas corporativos do mundo real.</p>
+          </div>
+          <span class="node-badge">disponível</span>
+        </a>
+      </div>
+    </li>
+
+    <li class="roadmap-node status-embreve">
+      <div class="node-card">
+        <span class="node-index">3</span>
+        <div class="node-body">
+          <h3>Servidores, HTTP e APIs</h3>
+          <p>Como um servidor responde a requisições e como uma API é construída.</p>
+        </div>
+        <span class="node-badge">em breve</span>
+      </div>
+    </li>
+
+    <li class="roadmap-node status-disponivel">
+      <a href="trilha-sql.html" class="node-card">
+        <span class="node-index">4</span>
+        <div class="node-body">
+          <h3>Banco de Dados</h3>
+          <p>Consultas SQL e os primeiros passos para armazenar e organizar dados.</p>
+        </div>
+        <span class="node-badge">disponível</span>
+      </a>
+    </li>
+
+    <li class="roadmap-node roadmap-branch status-embreve">
+      <div class="branch-label">framework — de acordo com a linguagem escolhida</div>
+      <div class="branch-options">
+        <a href="trilha-spring.html" class="node-card status-disponivel">
+          <span class="node-index">5a</span>
+          <div class="node-body">
+            <h3>Spring Boot <span style="font-weight:400;color:var(--text-dim);">· para quem escolheu Java</span></h3>
+            <p>Construa APIs Java de verdade e entenda o backend de grandes empresas.</p>
+          </div>
+          <span class="node-badge">disponível</span>
+        </a>
+        <span class="branch-or">ou</span>
+        <div class="node-card status-embreve">
+          <span class="node-index">5b</span>
+          <div class="node-body">
+            <h3>Django / Flask <span style="font-weight:400;color:var(--text-dim);">· para quem escolheu Python</span></h3>
+            <p>Frameworks web mais usados para construir APIs em Python.</p>
+          </div>
+          <span class="node-badge">em breve</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="roadmap-node status-disponivel">
+      <a href="trilha-git.html" class="node-card">
+        <span class="node-index">6</span>
+        <div class="node-body">
+          <h3>Git, testes e ferramentas</h3>
+          <p>Versionamento de código com Git — a trilha de testes automatizados está a caminho.</p>
+        </div>
+        <span class="node-badge">disponível</span>
+      </a>
+    </li>
+
+    <li class="roadmap-node status-disponivel">
+      <a href="trilha-carreira.html" class="node-card">
+        <span class="node-index">7</span>
+        <div class="node-body">
+          <h3>Projetos e mercado</h3>
+          <p>Portfólio, LinkedIn, currículo e como se preparar para a primeira entrevista.</p>
+        </div>
+        <span class="node-badge">disponível</span>
+      </a>
+    </li>
+
+  </ol>
+
+  <!-- ============ CTA FINAL ============ -->
+  <div class="trilha-cta-final">
+    <div class="cta-card">
+      <h3>Prefere o roadmap de front-end?</h3>
+      <p>Se você também quer entender o outro lado da aplicação, o roadmap de front-end segue a mesma lógica, do zero ao mercado.</p>
+      <a href="roadmap-front-end.html" class="btn btn-primary">Ver roadmap de front-end</a>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div class="rodape-brand">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="SOMA+" class="logo-img">
+        </a>
+        <p>Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.</p>
+      </div>
+
+      <nav class="rodape-col">
+        <h5>Plataforma</h5>
+        <a href="trilhas.html">Trilhas</a>
+        <a href="index.html#comunidade">Comunidade</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <nav class="rodape-col">
+        <h5>Institucional</h5>
+        <a href="#">Sobre</a>
+        <a href="#">Parcerias</a>
+        <a href="#">Termos de uso</a>
+      </nav>
+
+      <div class="rodape-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:anaheloisa1809@gmail.com">anaheloisa1809@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="rodape-bottom">
+      <p>© 2026 SOMA+. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
