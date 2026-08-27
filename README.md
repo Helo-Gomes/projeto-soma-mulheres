@@ -2,7 +2,9 @@
 
 Programação gratuita e comunidade para mulheres e meninas que estão começando do zero.
 
-O SOMA+ nasceu de uma vontade simples: eu ainda estou no primeiro ano da faculdade, aprendendo programação há pouco tempo, e sei como é difícil começar sem saber por onde ir. Então decidi juntar os melhores conteúdos gratuitos que encontrei pela internet — vídeos, ebooks, documentações — e organizar tudo numa ordem que faça sentido pra quem tá no começo. Não é um curso meu, é uma curadoria. O crédito de cada material é de quem criou.
+O SOMA+ nasceu de uma vontade simples: eu ainda estou no primeiro ano da faculdade, aprendendo programação há pouco tempo, e sei como é difícil começar sem saber por onde ir. Então decidi juntar os melhores conteúdos gratuitos que encontrei pela internet: vídeos, ebooks, documentações e organizar tudo numa ordem que faça sentido pra quem tá no começo. Não é um curso meu, é uma curadoria. O crédito de cada material é de quem criou.
+
+<img width="421" height="128" alt="logo" src="https://github.com/user-attachments/assets/5e8bf364-3a6a-4212-a891-6897251ce8c5" />
 
 ## O que tem por aqui
 
@@ -12,8 +14,7 @@ O SOMA+ nasceu de uma vontade simples: eu ainda estou no primeiro ano da faculda
 - **Comunidade**, com espaço pra grupos de estudo e mentoria
 - **FAQ** com as dúvidas mais comuns
 
-<img width="500" height="500" alt="8d78290ddb68ab61bc8c862cc5d63818" src="https://github.com/user-attachments/assets/154d640e-e3b1-4f14-80cc-d38e3c6c146a" />
-
+<img width="1588" height="772" alt="hero" src="https://github.com/user-attachments/assets/1a55e7a2-eee7-43f5-824e-b0f63b1142a1" />
 
 ## Quer contribuir?
 
