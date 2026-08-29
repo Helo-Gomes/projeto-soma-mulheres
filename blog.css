@@ -1,7 +1,3 @@
-/* ============================================
-   SOMA+ — Estilos da página de Blog
-   Depende dos tokens definidos em style.css
-============================================ */
 
 .blog-section{max-width:1140px;margin:0 auto;padding:2.5rem 1.25rem 4rem;}
 
@@ -37,7 +33,6 @@
 
 .blog-section .empty-state{margin-top:2rem;}
 
-/* ============ MATÉRIAS (blog.html) ============ */
 .materias-cta{padding:1rem 0 4rem;}
 
 .materias-grid{

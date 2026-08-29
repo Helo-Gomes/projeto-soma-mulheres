@@ -1,4 +1,3 @@
-// ===== MENU MOBILE (lógica original mantida) =====
 const menuToggle = document.getElementById('menuToggle');
 const menu = document.getElementById('menu');
 
@@ -16,10 +15,9 @@ window.addEventListener('resize', () => {
   }
 });
 
-// ===== EFEITO TYPEWRITER NO CÓDIGO DO HERO =====
 const codeLines = [
   'def boas_vindas(nome):',
-  '    print(f"Oi, {nome}! 👋")',
+  '    print(f"Oi, {nome}! ")',
   '    print("Bem-vinda ao SOMA+")',
   '    return "vamos programar juntas"',
   '',
@@ -65,7 +63,6 @@ function typeWriter(){
 
 typeWriter();
 
-// ===== ACCORDION DE FAQ =====
 const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {

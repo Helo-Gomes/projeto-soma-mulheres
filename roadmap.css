@@ -1,11 +1,4 @@
-/* ============================================
-   SOMA+ — Estilos das páginas de Roadmap
-   (mapa visual e interativo de aprendizado)
-   Depende dos tokens definidos em style.css
-   e dos componentes de trilhas.css (breadcrumb, page-hero, cta-card)
-============================================ */
 
-/* ============ LEGENDA DE STATUS ============ */
 .roadmap-legend{
   max-width:820px;margin:0 auto 0.5rem;padding:0 1.25rem;
   display:flex;flex-wrap:wrap;gap:10px 22px;
@@ -26,7 +19,6 @@
   font-size:0.84rem;color:var(--text-dim);
 }
 
-/* ============ LINHA DO CAMINHO ============ */
 .roadmap-path{
   list-style:none;position:relative;
   max-width:820px;margin:2rem auto 0;padding:0 1.25rem 3rem;
@@ -36,7 +28,6 @@
   background:linear-gradient(var(--purple),var(--pink));border-radius:3px;
 }
 
-/* ============ NÓ / ETAPA ============ */
 .roadmap-node{position:relative;padding-left:60px;margin-bottom:1.6rem;}
 .roadmap-node::before{
   content:"";position:absolute;left:33px;top:22px;width:14px;height:14px;
@@ -81,7 +72,6 @@ a.node-card:active{transform:translateX(2px);}
 .status-disponivel .node-badge{background:rgba(92,224,160,0.15);color:var(--green);}
 .status-embreve .node-badge{background:var(--surface-2);color:var(--text-dim);}
 
-/* ============ RAMIFICAÇÕES ============ */
 .roadmap-branch .branch-label{
   font-family:var(--font-mono);font-size:0.76rem;color:var(--text-dim);
   margin-bottom:10px;text-transform:lowercase;display:flex;align-items:center;gap:8px;
@@ -97,7 +87,6 @@ a.node-card:active{transform:translateX(2px);}
 }
 @media(max-width:600px){.branch-or{display:none;}}
 
-/* ============ RESPONSIVO — DESKTOP ============ */
 @media (min-width:860px){
   .roadmap-path{padding:0 1.25rem 4rem;margin-top:2.5rem;}
   .roadmap-node{padding-left:74px;margin-bottom:2rem;}

@@ -1,4 +1,3 @@
-// ===== FILTROS DA PÁGINA DE LISTAGEM =====
 const grid = document.getElementById('trilhasGrid');
 
 if (grid) {
@@ -51,5 +50,3 @@ if (grid) {
   applyFilters();
 }
 
-// (a lógica de accordion de módulos foi removida — a página de trilha agora
-// lista recursos curados externos, sem módulos internos a expandir)

@@ -1,10 +1,4 @@
-/* ============================================
-   SOMA+ — Estilos das páginas de Trilhas
-   (listagem + página individual)
-   Depende dos tokens definidos em style.css
-============================================ */
 
-/* ============ PAGE HEADER (sub-hero simples) ============ */
 .page-hero{
   padding:2.5rem 1.25rem 2rem;
   border-bottom:1px solid var(--border);
@@ -19,7 +13,6 @@
 .page-hero h1{font-size:clamp(1.8rem,5vw,2.6rem);margin-bottom:10px;}
 .page-hero .lead{font-size:1rem;max-width:560px;color:var(--text-muted);}
 
-/* ============ FILTROS (página de listagem) ============ */
 .filtros{
   max-width:1140px;margin:0 auto;padding:1.75rem 1.25rem 0;
   display:flex;flex-direction:column;gap:14px;
@@ -42,7 +35,6 @@
   font-size:0.85rem;color:var(--text-dim);
 }
 
-/* ============ GRID DE TRILHAS (listagem completa) ============ */
 .trilhas-full-grid{
   display:grid;gap:1.2rem;max-width:1140px;margin:1.5rem auto 0;padding:0 1.25rem 4rem;
   grid-template-columns:1fr;
@@ -73,7 +65,6 @@
 .empty-state h3{font-family:var(--font-display);font-size:1.1rem;margin-bottom:8px;}
 .empty-state p{font-size:0.9rem;}
 
-/* ============ PÁGINA DE TRILHA INDIVIDUAL ============ */
 .trilha-detail-hero{
   padding:2.5rem 1.25rem;border-bottom:1px solid var(--border);
 }
@@ -107,7 +98,6 @@
 .trilha-progress-card .progress-caption{font-size:0.85rem;color:var(--text-dim);margin-bottom:18px;}
 .trilha-progress-card .btn{width:100%;}
 
-/* ============ AVISO DE CURADORIA ============ */
 .curadoria-aviso{
   max-width:1140px;margin:0 auto;padding:1.75rem 1.25rem 0;
 }
@@ -121,7 +111,6 @@
 .aviso-card p{font-size:0.88rem;color:var(--text-muted);}
 .aviso-card strong{color:var(--text);}
 
-/* ============ LISTA DE RECURSOS CURADOS ============ */
 .recursos-section{max-width:1140px;margin:0 auto;padding:2.5rem 1.25rem 4rem;}
 .recursos-list{display:flex;flex-direction:column;gap:14px;}
 
@@ -172,7 +161,6 @@
   .recurso-link{width:100%;justify-content:center;}
 }
 
-/* ============ CTA FINAL DA TRILHA ============ */
 .trilha-cta-final{
   max-width:1140px;margin:0 auto 4rem;padding:0 1.25rem;
 }
@@ -184,7 +172,6 @@
 .cta-card h3{font-family:var(--font-display);font-size:1.3rem;margin-bottom:10px;}
 .cta-card p{margin-bottom:20px;max-width:440px;margin-left:auto;margin-right:auto;}
 
-/* ============ SUBSEÇÕES E MATERIAL COMPLEMENTAR ============ */
 .subsecao{margin-top:1rem;}
 
 .ferramentas-grid{
